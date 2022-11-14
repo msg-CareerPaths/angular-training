@@ -1,0 +1,57 @@
+## 8. Simple NgRx [6h]
+
+**Goal:** Use NgRx for state management.
+
+**Note:** Communicate with your mentor about this step, do no get stuck and try to do everything by yourself.
+
+#### Required:
+
+*Videos*
+
+1. [NgRx Crash Course](https://www.youtube.com/watch?v=kx0VTgTtSBg)
+
+*Reading*
+
+- [Angular: NgRx a clean and clear Introduction](https://medium.com/frontend-fun/angular-ngrx-a-clean-and-clear-introduction-4ed61c89c1fc)
+    - Take note to use the latest variants of creating actions, selectors, reducers and effects as per documentation:
+        - Actions: `export const increment = createAction('[Counter Component] Increment');`
+        - Reducers:
+      ```
+        export const counterReducer = createReducer(
+          initialState,
+          on(increment, (state) => state + 1),
+          on(decrement, (state) => state - 1),
+          on(reset, (state) => 0)
+        );
+       ```
+        - Selectors:
+       ```
+        export const selectFeature = (state: AppState) => state.feature;
+  
+        export const selectFeatureCount = createSelector(
+          selectFeature,
+          (state: FeatureState) => state.counter
+        );
+       ```
+- [NgRx: Store - Reducers, Actions](https://ngrx.io/guide/store)
+- [NgRx: Effects](https://ngrx.io/guide/effects)
+- [NgRx Docs](https://ngrx.io/docs)
+
+#### Online Shop:
+
+> Add NGRX to your app by:
+>  - Creating a reducer for each page,
+>  - Adding actions for each user input handler, data load event, etc.
+>  - Adding effects to react on the data loading actions and call the services,
+>  - Dispatching the actions and selecting the state **only** inside the smart components.
+>
+> Hints:
+>  - Make sure to also have a loading flag indicator in each page's state,
+>  - Use the async pipe inside the smart components to not pass `Observables` to dumb components,
+>  - Install the [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) Chrome plugin to be able to debug your store.
+     >    - Also add the [Ngrx Store DevTools](https://ngrx.io/guide/store-devtools/install) to your application for it to work.
+
+#### Further Resources (Optional):
+- [NGRX Tips and Tricks](https://medium.com/@praveenpuglia/practical-ngrx-effects-tips-tricks-1935509c9fb6)
+- [NGRX Best Practices](https://indepth.dev/posts/1451/ngrx-best-practices-new)
+- [NGRX Example App](https://github.com/ngrx/platform/tree/master/projects/example-app/)
