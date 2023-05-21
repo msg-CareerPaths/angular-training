@@ -1,4 +1,4 @@
-## Frontend Development - Learn More
+# Frontend Development - Learn More
 
 - [The Event Loop - Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - [The Event Loop - Jake Archibald](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
