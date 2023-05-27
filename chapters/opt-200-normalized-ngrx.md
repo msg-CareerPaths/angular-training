@@ -1,24 +1,22 @@
-## OPT-2. Normalized NgRx
-
+# OPT-2. Normalized NgRx
 
 **Goal:** Normalize the NGRX state.
 
-#### Required Reading:
+## Mandatory Materials
 - [Normalizing State Shape](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape)
 - [The benefits of application state normalization in Angular](https://medium.com/angular-in-depth/the-benefits-of-application-state-normalization-in-angular-f93392ca9f44)
 - [NgRx Entity State](https://ngrx.io/guide/entity) (use this to help with your normalization)
 
-#### Online Shop:
+## Online Shop:
 
-> Split your application state into two parts:
->  - `data`: The portion which will hold the normalized data collections,
->  - `ui`: The portion which will hold the sub-states used in the app pages.
->
-> Inside the `data` sub-tree, you should have a `products` map (between ID and the entity itself).
-> For each product, you should also store an indicator if the product is fully loaded or just the header is loaded.
-> You should only make a call to the backend if it is really necessary (if the entity / entity set is not loaded).
->
-> Inside the `ui` sub-tree, you should never copy product data, just have the IDs to reference the corresponding
-> entry from the `data` sub-tree.
+> Split your main reducers, effects, selectors into `reducers per entity` (e.g.: Product, User, Shopping Cart)
+> 
+> Have the Shopping Cart reducer inside the `shopping-cart` module folder
+> 
+> Split your reducer state into two parts: (use Entity Adapter from NgRx)
+>  - `ids`: An array of all the primary ids in the collection,
+>  - `entities`: A dictionary of entities in the collection indexed by the primary id.
 >
 > You should define selectors to denormalize the data back to what you need in your pages.
+> 
+> Refactor your application to use the new structure and test it.

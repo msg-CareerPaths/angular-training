@@ -1,19 +1,19 @@
-## OPT-6. Mono-Repository with Nx
+# OPT-6. Mono-Repository with Nx
 
-#### Required
+## Mandatory Materials
 
-*Videos*
+**Videos**
 
 1. [Nx Quickstart](https://www.youtube.com/watch?v=VUyBY72mwrQ)
-1. [How the Pros Scale Huge Software Projects](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
+2. [How the Pros Scale Huge Software Projects](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
 
-*Reading*
+**Reading**
 - [Monorepo](https://www.perforce.com/blog/vcs/what-monorepo)
 - [Nx Workspace](https://nx.dev/getting-started/intro)
 - [Nx Mental Model](https://nx.dev/using-nx/mental-model)
 - [Nx and Angular](https://nx.dev/getting-started/nx-and-angular)
 
-#### Online Shop:
+## Online Shop:
 
 >  Add some of the UI elements from the Online Shop into a component library and publish it
 >  - [Migrate your Angular Application to an Nx workspace](https://nx.dev/migration/migration-angular).
@@ -22,7 +22,7 @@
 >  - Do not publish this library (unless you really want to).
 
 
-#### Further resources (Optional):
+## Further resources (Optional):
 
 - [Imposing Constraints in the Project](https://nx.dev/structure/monorepo-tags)
 - [Using Nx at Enterprises](https://nx.dev/guides/monorepo-nx-enterprise)
