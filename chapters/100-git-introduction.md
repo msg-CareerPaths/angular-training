@@ -13,7 +13,7 @@ You can skip this training if you have already done it in another training sessi
 - Have a look at the following [video](https://www.youtube.com/watch?v=HkdAHXoRtos)
 
 **Reading**
-- [Git Basics](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics)
+- [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 **Game** (Optional)
 - Alternatively, you can [play a game](https://learngitbranching.js.org)
