@@ -30,7 +30,7 @@
 >
 > Also add a logout button, which when called, removes the token from the localstorage and redirects the user to the login page.
 >
-> Automatically redirect the user to the login view each time he opens or refreshes the application. When pressing the login button, send an appropriate request to the backend. If the request succeeds, redirect the user to the product page, otherwise display an error message.
+> Automatically redirect the user to the login view each time you receive a 401 response on a request. When pressing the login button, send an appropriate request to the backend. If the request succeeds, redirect the user to the product page, otherwise display an error message.
 >
 > Use the roles returned by the backend to disable the edit, create and delete buttons if the user is not an administrator. Only allow customers to view the shopping cart and to add products in it.
 
