@@ -19,7 +19,6 @@
   - [Structuring Application Components](https://angular-training-guide.rangle.io/components/structuring_applications_with_components)
 - [Debugging in Angular](https://medium.com/@vamsivempati/a-guide-to-debugging-angular-applications-5a36bd88b4cf)
 - [Using Angular DevTools](https://angular.io/guide/devtools)
-- [Container and Presentational Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
 
 ## Online Shop
