@@ -56,7 +56,7 @@ For the moment, we will use mock data across all components. The data will be de
 │   │           ├── products-details-view.component.scss
 │   │           ├── products-details-view.component.html
 │   ├── types
-│   │   ├── products.types.ts -- interface/classes for the Product
+│   │   ├── products.types.ts -- interface for the Product
 │   ├── mocks
 │       ├── products.mocks.ts -- mock data for the Product (will be deleted later on when we will retrieve the data from the API)
 ```
