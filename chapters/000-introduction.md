@@ -1,64 +1,67 @@
 # Angular Training Introduction
 
-## Description 
+## Description
+
 First, I would like to start by emphasizing with reader that the following read is quite verbose, but I would like to ask that you read the following carefully.
 
 This is a roadmap/training for a introduction into the Angular Framework consisting of several steps.
-In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos. 
+In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos.
 
-In parallel, a simple application will be built with the learned concepts: the *Online Shop* application.
+In parallel, a simple application will be built with the learned concepts: the _Online Shop_ application.
 After the learning material for a given step was sufficiently explored either some new functionality will be added to this application or old functionality will be refactored.
 
 ## Working Mode
 
 All the code written must be published on GitHub.
 
-- Create your own repository on your personal account and give access to your mentor (make sure you specify your name in case you have an esoteric username).
-- Commits must be pushed when each individual chapter is finished. 
-- [Create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `master` branch **before starting work**.
-- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `master` branch. Inform them in your **daily standup** of this or through a PM.
-- **Once the Pull Request is approved** by the mentors, merge it into `main` and create another branch from master to continue work.
-- Take care to delete your `develop` branch then, go back inside your IDE to `main` and update it (git pull)
-- Carry on your work by creating another `develop` branch and working on it
-- Repeat ad infinitum (until the training has ended)
+- Create a repository on your personal GitHub account and grant access to your mentors. (Be sure to specify your name if your username is weird).
+- Commits must be pushed when each individual chapter is finished.
+- [Create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `main` branch **before starting work**.
+- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `main` branch. Add the mentors as reviewers.
+- **Once the Pull Request is approved** by the mentors, merge it into `main` and create another branch from `main` to continue working.
+- After merging, delete your `develop` branch. Then, update your `main` branch by pulling the latest changes (git pull).
+- Carry on your work by creating another `develop` branch and work on it.
+- Keep repeating this process until the training is completed.
 
 ## Environment Setup
 
 On your local machine install the following:
-- You need to install [NodeJS](https://nodejs.org/en/) (recommended for most user version, 18.16.0 at moment of writing)
-- You will need an IDE (Integrated Development Environment) so you can code
+
+- You need to install [NodeJS](https://nodejs.org/en/) (LTS recommended).
+- You will need an IDE (Integrated Development Environment) to write and manage your code.
   - [VSCode](https://code.visualstudio.com/download)
   - [Webstorm](https://www.jetbrains.com/webstorm/) as an alternative to VSCode. Note if you are still a student you can use your student license on it, otherwise you can use the 30 days trial.
 - You need to have [Git](https://git-scm.com) installed on your computer.
-- Have also [Notepad++](https://notepad-plus-plus.org/downloads/) for a nicer basic file editing experience
 
 ## Online Shop
 
-We will create a very basic online shop to showcase the functionalities of the Angular framework.
-The application will simply browse through a catalog of products. It will support the following functional requirements:
-- Listing the products,
-- Adding a new product,
-- Updating an existing product,
-- Deleting a product.
+You will create a basic online shop that will showcase the functionalities of the Angular framework, building the front-end on top of the backend implemented during the Spring Training.
+The application will allow users to browse a catalog of products. It will support the following functional requirements:
 
-The online shop has a "shopping cart" functionality:
-- The user may add items into the cart,
-- He may increment and decrement the quantity of each product or even remove a product completely from the cart,
-- Lastly, he can check out the cart and place an order (resulting in the creation of an order in the backend).
+- Listing products
+- Adding a new product
+- Updating an existing product
+- Deleting a product
 
-### Mock Backend
-A mock backend alongside the instruction for starting it can be found [here](https://github.com/msg-CareerPaths/mock-backend).
+The online shop will also have a "shopping cart" functionality:
+
+- The user can add items to the cart
+- The user can increment and decrement the quantity of each product or even remove a product completely from the cart
+- Lastly, he can check out the cart and place an order (resulting in the creation of an order in the backend)
 
 ### UI Design
-Mockups describing the user interface structure can be found in the [mockup's](../mockups/mockups.pdf) folder.
+
+Mockups describing the user interface structure can be found in the [mockups](../mockups/mockups.pdf) folder.
 These mockups should be used as a guideline, but improvements or deviations from them is allowed.
 
 ## Notes
+
 - If you find any link broken, **please** inform your mentor to give you an alternative.
-- Try to speed up the videos to *1.5x/2x* if you find them too slow.
+- Try to speed up the videos to _1.5x/2x_ if you find them too slow.
 - Try to connect to the Backend from the Spring Training if you have training completed (you might need to change the port for your requests)
 
 ## Timeline
+
 This timeline is just for guidance, take time to understand the concepts before moving on.
 
 - **Day 1**: Chapter 0, Chapter 1, Chapter 2, Chapter 3
@@ -73,6 +76,7 @@ This timeline is just for guidance, take time to understand the concepts before 
 ## Mentions
 
 This section is dedicated to the open source contributors we have used when creating the tutorial, and we want to acknowledge for their educational content.
+
 - [Fireship](https://www.youtube.com/@Fireship) for most of the videos in the training.
 - [WebDevSimplified](https://www.youtube.com/@WebDevSimplified)
 - [TheNewBoston](https://www.youtube.com/user/thenewboston)
@@ -80,31 +84,3 @@ This section is dedicated to the open source contributors we have used when crea
 - [JetBrains](https://www.youtube.com/@JetBrainsTV)
 - [VSCode](https://www.youtube.com/@code)
 - All other authors of the various links used
-
-## ZScaler Issues (OPTIONAL - only when needed)
-
-You might encounter ZScaler issues due to company bureaucracy. ZScaler is proxy that scan and routes the internet traffic of your device, blocking you from accesing certain internet endpoints.
-Thus, if you encounter `SSL CERTIFICATE ERRORS`, `UNABLE TO GET LOCAL ISSUER CERTIFICATE` or simply connection issue this **may** point you to a ZScaler problem.
-
-First steps:
-- Download the certificate offered by the company
-- Save the certificate in C:\zscaler.crt
-
-### Webstorm Issues
-- Go to File\Settings in your IDE
-- Search for `Proxy` in the search bar
-- Turn on the `Auto-detect proxy settings`
-- Search for `Server Certificates`
-- Press the `plus` icon in the Accepted Certificates tables and add the Zscaler certificate
-
-### Git Issues
-- Go to `C:\Users\<your_username>\AppData\Local\Programs\Git\mingw64\ssl\certs` and open `ca-bundle.crt` in Notepad
-- Open in a parallel notepad instance the `zscaler.crt`
-- **Copy** the content from `zscaler.crt` to the bottom of the `ca-bundle.crt` file (leave an empty space between)
-- You can make `Git` trust the Windows certificate store by running in a terminal instance `git config --global http.sslBackend schannel`
-
-### Node.js Issues
-- Open windows search bar and type `environment`
-- Select `Edit environment variables...` and select `Environment Variables` from the new window
-- In User variables add a new one with the name `NODE_EXTRA_CA_CERTS` and the value being the `path to your saved certificate` (C:\zscaler.crt)
-- Restart your computer

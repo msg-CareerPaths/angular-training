@@ -16,18 +16,18 @@ Therefore, after saving/editing your file try to make it an ingrained action for
 **Reading**
 
 - [Single vs Multiple Page Applications](https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58)
-- [Angular Quick Start](https://angular.io/start)
-- [Angular First App 01](https://angular.io/tutorial/first-app/first-app-lesson-01)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
-- [Angular Architecture Overview](https://angular.io/guide/architecture)
+- [Angular Overview](https://angular.dev/overview)
+- [Angular Installation Guide](https://angular.dev/installation)
+- [Angular First App 01](https://angular.dev/tutorials/first-app/01-hello-world)
+- [Angular Style Guide](https://angular.dev/style-guide)
 
 ## Online Shop
 
-> Install the *Angular CLI* with the help of the NodeJS package manager: `npm install -g @angular/cli`.
+> Install the _Angular CLI_ with the help of the NodeJS package manager: `npm install -g @angular/cli`.
 >
 > Create a new project in the root of your git repository by using the CLI: `ng new online-shop --style=scss`.
 >
-> Navigate inside the project folder, Start the project and open its home page in your browser: `ng serve --start`.
+> Navigate inside the project folder, start the project and open its home page in your browser: `ng serve --start` or `npm start`.
 
 ## Further Resources (Optional):
 

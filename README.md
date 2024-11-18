@@ -13,19 +13,19 @@
 - [8. Angular Services and HTTP Client](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/800-services-and-http-client.md)
 - [9. Angular Forms](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/900-forms-and-validations.md)
 - [10. Angular Authentication](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1000-authentication.md)
-- [11. Redux and NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1100-ngrx.md)
-- [12. Material Design Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1200-material-components-library.md)
 
 ## Optional Content
 
-There is no particular order in which you have to choose to begin with them.
+There is no specific order in which you need to go through them.
 
 - [Opt 1. Internationalization](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-100-internationalization.md)
-- [Opt 2. Normalized NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-200-normalized-ngrx.md)
-- [Opt 3. Unit Testing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-300-unit-testing.md)
-- [Opt 4. E2E Testing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-400-e2e-testing.md)
-- [Opt 5. Component Library](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-500-component-library-development.md)
-- [Opt 6. Nx Mono-repository](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-600-monorepository-nx.md)
+- [Opt 2. Material Design Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1200-material-components-library.md)
+- [Opt 3. Redux and NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1100-ngrx.md)
+- [Opt 4. Normalized NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-200-normalized-ngrx.md)
+- [Opt 5. Unit Testing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-300-unit-testing.md)
+- [Opt 6. E2E Testing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-400-e2e-testing.md)
+- [Opt 7. Component Library](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-500-component-library-development.md)
+- [Opt 8. Nx Mono-repository](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-600-monorepository-nx.md)
 
 ## Other Content
 

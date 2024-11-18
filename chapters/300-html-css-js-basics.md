@@ -2,7 +2,6 @@
 
 **Goal:** Get a brief introduction into HTML, CSS and JS concepts.
 
-
 ## Mandatory Materials
 
 **Videos**
@@ -25,7 +24,8 @@
 - [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [NPM Introduction](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 
-*Style Guide Reference*
+_Style Guide Reference_
+
 - [TypeScript Styleguide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb JavaScrpt Styleguide](https://github.com/airbnb/javascript)
 

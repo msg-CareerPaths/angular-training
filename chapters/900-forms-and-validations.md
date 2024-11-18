@@ -11,38 +11,29 @@
 
 **Reading**
 
-- [Forms overview](https://angular.io/guide/forms-overview)
-- [Reactive Forms](https://angular.io/guide/reactive-forms) (focus on this)
-- [Angular First App 12: Forms](https://angular.io/tutorial/first-app/first-app-lesson-12)
-- [Validating Form Input](https://angular.io/guide/form-validation)
-- [Form Validation: Reactive Forms](https://angular.io/guide/form-validation#validating-input-in-reactive-forms)
+- [Angular Forms](https://angular.dev/guide/forms)
+- [Reactive Forms](https://angular.dev/guide/forms/reactive-forms) (focus on this)
+- [First App: Forms](https://angular.dev/tutorials/first-app/12-forms)
+- [Input Validation](https://v17.angular.io/guide/form-validation#validating-input-in-reactive-forms)
 - [Forms tutorial](https://www.tutorialspoint.com/angular6/angular6_forms.htm)
-
 
 ## Online Shop:
 
-Recall that the logic should be added to the `container` components and the presentational part in his named counterpart.
-
-> Add a new "Edit" button on the detail page. Pressing it should open a new view, which uses reactive forms to update the properties of the product. The view should have two buttons: "Cancel" (which undo's all the changes) and "Save" (which calls the backend to persist the changes).
+> Add a new "Edit" button on the detail page. Pressing it should open a new view that uses reactive forms to update the product’s properties. The view should have two buttons: "Cancel" (which undoes all changes) and "Save" (which calls the backend to persist the changes).
 >
-> Add some validation to your form (ex: check that the fields are not empty, that the price and weight inputs contain only numbers, etc.)
+> Add validation to your form (e.g., check that the fields are not empty, ensure that the price and weight inputs contain only numbers, etc.).
 >
-> Also create a new "Add" button on the product list. Pressing this button should open a view for creating a new product (which the same structure and buttons as the edit view).
+> Create a new "Add" button on the product list. Pressing this button should open a view for creating a new product, with the same structure and buttons as the edit view.
 
 ### Folder Structure
+
 ```text
 ├── src/app
 │   ├── components
-│   │   ├── containers
-│   │   │   ├── products-form
-│   │   │   │   ├── products-form.component.ts
-│   │   │   │   ├── products-form.component.scss
-│   │   │   │   ├── products-form.component.html
-│   │   ├── presentational
-│   │       ├── products-form-view
-│   │       │   ├── products-form-view.component.ts
-│   │       │   ├── products-form-view.component.scss
-│   │       │   ├── products-form-view.component.html
+│   │   ├── products-form
+│   │   │   ├── products-form.component.ts
+│   │   │   ├── products-form.component.scss
+│   │   │   ├── products-form.component.html
 │.......<the previous files>................................
 ```
 

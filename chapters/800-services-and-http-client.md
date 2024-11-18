@@ -14,28 +14,27 @@ Recall the previous chapter material regarding `Observables` and unsubscribing t
 
 **Reading**
 
-- [Quick start guide](https://blog.angular-university.io/angular-http/)
-- [Angular Http Tutorial](https://www.tutorialspoint.com/angular6/angular6_http_client.htm)
-- [Official docs](https://angular.io/guide/http)
-- [Environment Files](https://angular.io/guide/build)
+- [HttpClient Quickstart guide](https://blog.angular-university.io/angular-http/)
+- [HttpClient Tutorial](https://www.tutorialspoint.com/angular6/angular6_http_client.htm)
+- [Official docs](https://angular.dev/guide/http)
+- [Environment Files](https://angular.dev/tools/cli/environments)
 
 ## Online Shop:
 
-The logic you are currently developing should be added to the `container` components.
-
-> Run `ng generate environments` to create in `src/environements` the files where you will specify the API base url 
+> Run `ng generate environments` to create the necessary files in `src/environments`, where you will specify the API base URL.
 >
-> Make the `src/environments/environment.ts` have a property called `apiUrl` which has a value toward the API base url
+> In `src/environments/environment.ts`, add a property called `apiUrl` and set its value to the API base URL.
 >
-> Use HttpClient to read the products from the backend to fill in the product list. (Hint: use the api base url for the service)
+> Use HttpClient to fetch the products from the backend and populate the product list. (Hint: use the API base URL for the service.)
 >
-> When navigating to the product detail page, read the product information from the backend.
+> When navigating to the product detail page, fetch the product information from the backend.
 >
-> Add a new "Delete" button on the detail page, which calls the backend to remove a product from the catalogue.
+> Add a "Delete" button on the detail page that calls the backend to remove the product from the catalog.
 >
-> Add a new "Checkout" button on the shopping cart page, which creates a new order on the backend.
+> Add a "Checkout" button on the shopping cart page that creates a new order on the backend.
 
 ### Folder Structure
+
 ```text
 ├── src
 │   ├── environments
@@ -51,9 +50,8 @@ The logic you are currently developing should be added to the `container` compon
 │.......<the previous files>................................
 ```
 
-
 ## Further Resources (Optional):
 
-- [Http error handling](https://angular.io/guide/http#error-handling)
-- [CORS: Proxy-ing a backend server](https://angular.io/guide/build#proxying-to-a-backend-server)
-- [HTTP Interceptor](https://ultimatecourses.com/blog/intro-to-angular-http-interceptors)
+- [Http error handling](https://angular.dev/guide/http/making-requests#handling-request-failure)
+- [CORS: Proxying a backend server](https://angular.dev/tools/cli/serve#proxying-to-a-backend-server)
+- [Interceptors](https://angular.dev/guide/http/interceptors)
