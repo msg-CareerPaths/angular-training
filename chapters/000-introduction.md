@@ -2,25 +2,23 @@
 
 ## Description
 
-First, I would like to start by emphasizing with reader that the following read is quite verbose, but I would like to ask that you read the following carefully.
+The following content might be quite detailed. However, we kindly ask that you read it carefully.
 
-This is a roadmap/training for a introduction into the Angular Framework consisting of several steps.
-In each step, a set of theoretical concepts are explored, supported by reference documentation, book chapters, tutorials and videos.
+This roadmap/training serves as an introduction to the Angular Framework, consisting of several steps. In each step, you will explore a set of theoretical concepts, supported by reference documentation, book chapters, tutorials, and videos.
 
-In parallel, a simple application will be built with the learned concepts: the _Online Shop_ application.
-After the learning material for a given step was sufficiently explored either some new functionality will be added to this application or old functionality will be refactored.
+In parallel, a simple application —an Online Shop— will be built using the concepts learned. After exploring the learning material for each step, either new functionality will be added to the application or existing functionality will be refactored.
 
 ## Working Mode
 
-All the code written must be published on GitHub.
+All code written must be published on GitHub.
 
 - Create a repository on your personal GitHub account and grant access to your mentors. (Be sure to specify your name if your username is weird).
 - Commits must be pushed when each individual chapter is finished.
 - [Create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `main` branch **before starting work**.
 - **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `main` branch. Add the mentors as reviewers.
-- **Once the Pull Request is approved** by the mentors, merge it into `main` and create another branch from `main` to continue working.
+- **Once the Pull Request is approved** by the mentors, merge it into `main`.
 - After merging, delete your `develop` branch. Then, update your `main` branch by pulling the latest changes (git pull).
-- Carry on your work by creating another `develop` branch and work on it.
+- Carry on your work by creating another `develop` branch from `main` and work on it.
 - Keep repeating this process until the training is completed.
 
 ## Environment Setup
@@ -30,7 +28,7 @@ On your local machine install the following:
 - You need to install [NodeJS](https://nodejs.org/en/) (LTS recommended).
 - You will need an IDE (Integrated Development Environment) to write and manage your code.
   - [VSCode](https://code.visualstudio.com/download)
-  - [Webstorm](https://www.jetbrains.com/webstorm/) as an alternative to VSCode. Note if you are still a student you can use your student license on it, otherwise you can use the 30 days trial.
+  - [Webstorm](https://www.jetbrains.com/webstorm/) as an alternative to VSCode. You can use your student license for it, otherwise you can use the 30 days trial.
 - You need to have [Git](https://git-scm.com) installed on your computer.
 
 ## Online Shop
@@ -58,7 +56,6 @@ These mockups should be used as a guideline, but improvements or deviations from
 
 - If you find any link broken, **please** inform your mentor to give you an alternative.
 - Try to speed up the videos to _1.5x/2x_ if you find them too slow.
-- Try to connect to the Backend from the Spring Training if you have training completed (you might need to change the port for your requests)
 
 ## Timeline
 

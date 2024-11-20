@@ -16,14 +16,6 @@
   - Store the `jwt` token in [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [Route Guards](https://angular.dev/guide/routing/common-router-tasks#preventing-unauthorized-access)
 
-### Notes about the Mock Backend
-
-- It uses JWT for authentication.
-- Only the authentication module paths are secured:
-  - `http://localhost:3000/api/auth/profile` requires a JWT token in the request headers for it to work.
-  - Other API paths are not secured.
-- Check `src/assets/users.json` for more information regarding already available users.
-
 ## Online Shop:
 
 > Create a new login view with a text input for the username, a password input for the password, and a login button.
@@ -36,7 +28,7 @@
 >
 > Use the roles returned by the backend to disable the edit, create, and delete buttons if the user is not an administrator. Only allow customers to view the shopping cart and add products to it.
 >
-> Display information about the currently logged-in user somewhere in your application (eg. header) (call `/api/auth/profile`).
+> Display information about the currently logged-in user somewhere in your application (e.g., header) (call `/api/auth/profile`).
 
 ### Folder Structure
 

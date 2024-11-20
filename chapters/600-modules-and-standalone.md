@@ -1,6 +1,6 @@
 # 6. Modules and Standalone Components [4h]
 
-**Goal:** Be able to understand how to better split your code functionality.
+**Goal:** Gain a better understanding of how to organize and split your code functionality effectively.
 
 ## Mandatory Materials
 
@@ -20,19 +20,17 @@
 
 > Create a new Angular Module for the shopping cart functionality called `ShoppingCartModule`.
 >
-> Create a new Angular Component for displaying a shopping cart.
+> Create a new Angular Component to display the shopping cart.
 >
-> Add the new Component to the declaration of the `ShoppingCartModule`
+> Add the new Component to the declarations array of the `ShoppingCartModule`
 >
 > Import the `ShoppingCartModule` into the imports array of your `AppModule`.
 >
-> To test it, add the selector for your shopping cart to the app.component.html file to display it.
+> Add the selector of your shopping cart component to the app.component.html file to display it for testing.
 >
-> Now, let's create a standalone Button component that will be used to display icons inside it (such as the remove and shopping cart buttons from the mockup).
+> Create a new `shared` folder (following the specified structure). Inside this folder, create a new standalone component named `IconButton`, that will be used to display icons (e.g., the remove and shopping cart buttons from the mockup).
 >
-> Create a new folder named `shared` (following the specified structure). Within this folder, add a component that takes a string as an `@Input` to specify an `icon type` and uses an `@Output` to emit a `click` event.
->
-> Name this new component `IconButton`
+> This component should accept a string as an `@Input` to specify the `icon type`, and it should emit a `click` event using `@Output`.
 >
 > Mark the component as `standalone` and use it as the remove button in your shopping cart module (you only need to import it into the `ShoppingCartModule`).
 >
@@ -40,7 +38,7 @@
 >
 > As a final step, for better organization, move the `product.types` file from the root types folder to the `shared` module.
 >
-> Correct the imports in your application and test that it works without any errors in the browser console.
+> Correct the imports in your application and test that if everything works without errors in the browser console.
 
 ### Folder Structure
 

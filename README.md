@@ -16,8 +16,6 @@
 
 ## Optional Content
 
-There is no specific order in which you need to go through them.
-
 - [Opt 1. Internationalization](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/opt-100-internationalization.md)
 - [Opt 2. Material Design Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1200-material-components-library.md)
 - [Opt 3. Redux and NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1100-ngrx.md)

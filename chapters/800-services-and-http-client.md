@@ -1,10 +1,10 @@
 # 8. Services and the HTTP Client [3h]
 
-**Goal:** practice with Angular HttpClient by connecting your frontend with the backend server
+**Goal:** Practice using Angular's HttpClient by connecting your frontend application to the backend server.
 
 ## Important Note
 
-Recall the previous chapter material regarding `Observables` and unsubscribing them.
+Recall the material from the previous chapter about `Observables` and the importance of unsubscribing from them.
 
 ## Mandatory Materials
 
