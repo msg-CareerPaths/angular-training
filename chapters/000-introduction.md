@@ -12,13 +12,13 @@ In parallel, a simple application —an Online Shop— will be built using the c
 
 All code written must be published on GitHub.
 
-- Create a repository on your personal GitHub account and grant access to your mentors. (Be sure to specify your name if your username is weird).
-- Commits must be pushed when each individual chapter is finished.
-- [Create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `develop` branch from the `main` branch **before starting work**.
-- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `develop` to the `main` branch. Add the mentors as reviewers.
-- **Once the Pull Request is approved** by the mentors, merge it into `main`.
-- After merging, delete your `develop` branch. Then, update your `main` branch by pulling the latest changes (git pull).
-- Carry on your work by creating another `develop` branch from `main` and work on it.
+- You will be provided with a repository in the GitHub organization. Ensure you have access to it.
+- **Before starting work**, [create](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) a `feature branch` from the `main` branch. Use a descriptive name for the branch (e.g., chapter-5-components).
+- Implement the online-shop requirements from that chapter in your `feature branch`. Commits must be pushed when each individual chapter is finished.
+- **In order to request a code review from the mentors**, you must [open a pull request](https://help.github.com/en/articles/creating-a-pull-request) from the `feature branch` to the `main` branch. Notify the mentors about the PR.
+- **Once the Pull Request is approved** by the mentors, merge it into the `main` branch.
+- Ensure your local `main` branch is up-to-date by pulling the latest changes (git pull).
+- For the next chapter, repeat the process by creating a new `feature branch` from the updated `main` branch.
 - Keep repeating this process until the training is completed.
 
 ## Environment Setup
