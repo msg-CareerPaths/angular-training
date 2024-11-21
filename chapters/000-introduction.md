@@ -61,14 +61,10 @@ These mockups should be used as a guideline, but improvements or deviations from
 
 This timeline is just for guidance, take time to understand the concepts before moving on.
 
-- **Day 1**: Chapter 0, Chapter 1, Chapter 2, Chapter 3
-- **Day 2**: Chapter 4, Chapter 5
-- **Day 3**: Chapter 6, **Open a Pull Request**, Fix Review Remarks => Merge to Master => Create a new branch,
-- **Day 4**: Chapter 7, Chapter 8
-- **Day 5**: Chapter 9, Chapter 10
-- **Day 6**: Chapter 11, **Open a Pull Request**, Fix Review Remarks => Merge to Master => Create a new branch
-- **Day 7**: Chapter 12
-- **Day 8**: Optional Chapters or Fix Review Remarks/Refactor Code
+- **Week 1**: Chapter 0, Chapter 1, Chapter 2, Chapter 3, Chapter 4, **Open a Pull Request with the project initialization**
+- **Week 2**: Chapter 5, **Open a Pull Request**, Chapter 6, **Open a Pull Request**
+- **Week 3**: Chapter 7, **Open a Pull Request**, Chapter 8, **Open a Pull Request**
+- **Week 4**: Chapter 9, **Open a Pull Request**, Chapter 10, **Open a Pull Request**, **Prepare for Demo**
 
 ## Mentions
 
