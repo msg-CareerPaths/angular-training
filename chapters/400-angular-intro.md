@@ -23,9 +23,10 @@ Therefore, after saving/editing your file try to make it an ingrained action for
 
 ## Online Shop
 
-> Install the _Angular CLI_ with the help of the NodeJS package manager: `npm install -g @angular/cli`.
+> Install the *Angular CLI* with the help of the NodeJS package manager: `npm install -g @angular/cli` ( `npm install -g @angular/cli@<version>` to install a specific version - use at least v16).
 >
 > Create a new project in the root of your git repository by using the CLI: `ng new online-shop --style=scss`.
+> For the latest versions of Angular, include the `--no-standalone` flag to create a module-based project.
 >
 > Navigate inside the project folder, start the project and open its home page in your browser: `ng serve --start` or `npm start`.
 
