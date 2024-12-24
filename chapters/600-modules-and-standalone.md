@@ -28,12 +28,16 @@
 >
 > Add the selector of your shopping cart component to the app.component.html file to display it for testing.
 >
-> Create a new `shared` folder (following the specified structure). Inside this folder, create a new standalone component named `IconButton`, that will be used to display icons (e.g., the remove and shopping cart buttons from the mockup).
+> Create a new `shared` folder (following the specified structure). Inside this folder, create a new standalone component named `IconButton`, that will be used to display icons.
 >
-> This component should accept a string as an `@Input` to specify the `icon type`, and it should emit a `click` event using `@Output`.
+> This component should accept a string as an `@Input` to specify the `icon` that will be displayed, and it should emit a `click` event using `@Output`.
 >
-> Mark the component as `standalone` and use it as the remove button in your shopping cart module (you only need to import it into the `ShoppingCartModule`).
->
+> Mark the component as `standalone` and use it
+
+- as the remove button in your shopping cart page
+- as the shopping cart button from the product list page
+- as the 'go to product details' arrow from the product list page
+
 > Test that your application displays the components correctly.
 >
 > As a final step, for better organization, move the `product.types` file from the root types folder to the `shared` module.

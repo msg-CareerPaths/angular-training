@@ -14,24 +14,28 @@ Recall the material from the previous chapter about `Observables` and the import
 
 **Reading**
 
-- [HttpClient Quickstart guide](https://blog.angular-university.io/angular-http/)
-- [HttpClient Tutorial](https://www.tutorialspoint.com/angular6/angular6_http_client.htm)
-- [Official docs](https://angular.dev/guide/http)
+- [HttpClient Official Docs](https://angular.dev/guide/http)
+- [HttpClient Setup](https://angular.dev/guide/http/setup) - Pay attention here, use `provideHttpClient()` with the NgModule-based approach!
 - [Environment Files](https://angular.dev/tools/cli/environments)
 
 ## Online Shop:
 
-> Run `ng generate environments` to create the necessary files in `src/environments`, where you will specify the API base URL.
+> Run `ng generate environments` to create the necessary files in `src/environments`.
 >
-> In `src/environments/environment.ts`, add a property called `apiUrl` and set its value to the API base URL.
+> In `src/environments/environment.ts`, add a property called `apiUrl`, and set its value to the API base URL.
 >
-> Use HttpClient to fetch the products from the backend and populate the product list. (Hint: use the API base URL for the service.)
+> Create a `services` folder and add the `products.service.ts` file. This service will handle all necessary backend calls for product-related operations using the API base URL.
 >
+> Use HttpClient to fetch the products from the backend ans
 > When navigating to the product detail page, fetch the product information from the backend.
+>
+> Add an "Add to Cart" button on the detail page to call the backend and add the product to the shopping cart. Note: This button is not in the mockup; feel free to design it as you wish.
+>
+> To keep things simple at this step, the product quantity can either be adjusted by pressing the "Add to Cart" button multiple times or, preferably, by adding + and - buttons around the quantity field in the shopping cart view.
 >
 > Add a "Delete" button on the detail page that calls the backend to remove the product from the catalog.
 >
-> Add a "Checkout" button on the shopping cart page that creates a new order on the backend.
+> Add a "Checkout" button on the shopping cart page that calls the backend to create a new order.
 
 ### Folder Structure
 

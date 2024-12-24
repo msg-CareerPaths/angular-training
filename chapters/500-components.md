@@ -22,13 +22,15 @@
 
 For the moment, we will use mock data across all components. The data will be defined locally in the Typescript file associated to a component.
 
-> Create a new Angular Component for displaying a single product's details. You can use the CLI command `ng generate component <component-name>` to achieve this.
+> Create a new Angular Component for displaying a single product's details. Use the CLI command `ng generate component <component-name>` to achieve this. `ng g c <component-name>` will also do the trick!.
 >
 > Create an Angular component for displaying a list of products. Hint: use the `*ngFor` directive.
 >
-> Add some CSS to each of the components to make them look nicer (following the mockup structure).
+> Add some CSS to each component to improve their appearance and align them with the mockup structure.
 >
-> To test them, add their selector to the app.component.html just to view them
+> Add the selectors for both components to app.component.html to test them.
+>
+> Note: The buttons shown in the mockups (e.g., shopping cart, edit, delete) can be added either now with basic styling and no functionality, or implemented later with full functionality and design.
 
 ### Folder Structure
 
