@@ -15,8 +15,8 @@ You can skip this training if you have already done it in another training sessi
 **Reading**
 - [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 - Branching Strategies for enterprise apps (have a look at some ways branching strategy is done at enterprise level)
- - [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
- - [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+  - [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+  - [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
 **Game** (Optional)
 - Alternatively, you can [play a game](https://learngitbranching.js.org)
