@@ -9,12 +9,13 @@
 - [4. Angular Intro](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/400-angular-intro.md)
 - [5. Angular Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/500-components.md)
 - [6. Angular Modules and Standalone Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/600-modules-and-standalone.md)
-- [7. Angular Routing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/700-routing.md)
-- [8. Angular Services and HTTP Client](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/800-services-and-http-client.md)
-- [9. Angular Forms](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/900-forms-and-validations.md)
-- [10. Angular Authentication](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1000-authentication.md)
-- [11. Redux and NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1100-ngrx.md)
-- [12. Material Design Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1200-material-components-library.md)
+- [7. Angular Signals](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/700-signals.md)
+- [8. Angular Routing](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/800-routing.md)
+- [9. Angular Services and HTTP Client](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/900-services-and-http-client.md)
+- [10. Angular Forms](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1000-forms-and-validations.md)
+- [11. Angular Authentication](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1100-authentication.md)
+- [12. Redux and NgRx](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1200-ngrx.md)
+- [13. Material Design Components](https://github.com/msg-CareerPaths/angular-training/blob/main/chapters/1300-material-components-library.md)
 
 ## Optional Content
 
