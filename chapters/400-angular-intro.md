@@ -16,10 +16,11 @@ Therefore, after saving/editing your file try to make it an ingrained action for
 **Reading**
 
 - [Single vs Multiple Page Applications](https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58)
-- [Angular Quick Start](https://angular.io/start)
-- [Angular First App 01](https://angular.io/tutorial/first-app/first-app-lesson-01)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
-- [Angular Architecture Overview](https://angular.io/guide/architecture)
+- [Angular Installation](https://angular.dev/installation)
+- [Angular Essentials](https://angular.dev/essentials)
+- [Angular First App 01](https://angular.dev/tutorials/first-app)
+- [Angular Style Guide](https://angular.dev/style-guide)
+- [Angular Architecture Overview](https://angular.dev/overview)
 
 ## Online Shop
 

@@ -1,4 +1,4 @@
-# 7. Routing [3h]
+# 8. Routing [3h]
 
 **Goal:** understand the basics of Angular Routing and add routing to your project
 

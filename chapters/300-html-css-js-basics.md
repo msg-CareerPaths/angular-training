@@ -28,6 +28,7 @@
 *Style Guide Reference*
 - [TypeScript Styleguide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb JavaScrpt Styleguide](https://github.com/airbnb/javascript)
+- [Angular Coding Style Guide](https://angular.dev/style-guide) (note discuss with the mentors regarding prefixes in the older style of `.component`, `.service`, the new version suggest going ahead without it)
 
 ## Online Shop
 

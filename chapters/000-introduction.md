@@ -25,10 +25,10 @@ All the code written must be published on GitHub.
 ## Environment Setup
 
 On your local machine install the following:
-- You need to install [NodeJS](https://nodejs.org/en/) (recommended for most user version, 18.16.0 at moment of writing)
-- You will need an IDE (Integrated Development Environment) so you can code
+- You need to install [NodeJS](https://nodejs.org/en/) (recommended for most user version, 22.19.0 at moment of writing)
+- You will need an IDE (Integrated Development Environment) so you can code:
+  - [Webstorm](https://www.jetbrains.com/webstorm/) (Non-Commercial Version)
   - [VSCode](https://code.visualstudio.com/download)
-  - [Webstorm](https://www.jetbrains.com/webstorm/) as an alternative to VSCode. Note if you are still a student you can use your student license on it, otherwise you can use the 30 days trial.
 - You need to have [Git](https://git-scm.com) installed on your computer.
 - Have also [Notepad++](https://notepad-plus-plus.org/downloads/) for a nicer basic file editing experience
 
@@ -55,6 +55,7 @@ These mockups should be used as a guideline, but improvements or deviations from
 
 ## Notes
 - If you find any link broken, **please** inform your mentor to give you an alternative.
+- Keep in mind that the videos might present content relating to an **older version** of angular.
 - Try to speed up the videos to *1.5x/2x* if you find them too slow.
 - Try to connect to the Backend from the Spring Training if you have training completed (you might need to change the port for your requests)
 
@@ -64,10 +65,10 @@ This timeline is just for guidance, take time to understand the concepts before 
 - **Day 1**: Chapter 0, Chapter 1, Chapter 2, Chapter 3
 - **Day 2**: Chapter 4, Chapter 5
 - **Day 3**: Chapter 6, **Open a Pull Request**, Fix Review Remarks => Merge to Master => Create a new branch,
-- **Day 4**: Chapter 7, Chapter 8
-- **Day 5**: Chapter 9, Chapter 10
-- **Day 6**: Chapter 11, **Open a Pull Request**, Fix Review Remarks => Merge to Master => Create a new branch
-- **Day 7**: Chapter 12
+- **Day 4**: Chapter 7
+- **Day 5**: Chapter 8, Chapter 9, Chapter 10
+- **Day 6**: Chapter 11, Chapter 12, **Open a Pull Request**, Fix Review Remarks => Merge to Master => Create a new branch
+- **Day 7**: Chapter 12, Chapter 13
 - **Day 8**: Optional Chapters or Fix Review Remarks/Refactor Code
 
 ## Mentions

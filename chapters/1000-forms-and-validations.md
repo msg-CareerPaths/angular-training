@@ -1,4 +1,4 @@
-# 9. Forms and Validation [3h]
+# 10. Forms and Validation [3h]
 
 **Goal:** dive into Angular Forms and add them to your project.
 

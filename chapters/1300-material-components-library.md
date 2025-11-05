@@ -1,4 +1,4 @@
-# 12. Use Material Components [2h - 3h]
+# 13. Use Material Components [2h - 3h]
 
 **Goal:** Learn to use a component library.
 

@@ -1,4 +1,4 @@
-# 10. Authentication, Authorization and Guards [3h]
+# 11. Authentication, Authorization and Guards [3h]
 
 **Goal:** get familiar with Route Guards and protect your app's routes from unauthorized access.
 

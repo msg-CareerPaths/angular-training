@@ -22,6 +22,10 @@ You can skip this training if you have already done it in another training sessi
 - If you use Webstorm you can have a look at the [following](https://www.youtube.com/watch?v=v0t_GHKyTiI). The IDE buttons might have changed position but the idea behind it is the same.
 - If you use VSCode you can have a look at the [following](https://www.youtube.com/watch?v=i_23KUAEtUM).
 
+### Rules
+
+- When you create pull requests you should take care to [squash merge](https://graphite.com/guides/git-merge-squash) them and delete old branches.
+
 ## Online Shop
 
 > nothing to do.

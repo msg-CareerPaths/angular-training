@@ -11,38 +11,35 @@
 
 **Reading**
 
-- [Introduction to Modules](https://angular.io/guide/architecture-modules)
+- [Introduction to Modules](https://angular.dev/guide/ngmodules/overview) (Modules are becoming deprecated slowly, the link is kept to the old documentation)
 - [Complete Guide to Modules](https://blog.angular-university.io/angular2-ngmodule/)
-- [Quick Module Explanation](https://angular-training-guide.rangle.io/modules/introduction)
 - [Standalone Components](https://angular.io/guide/standalone-components)
+- [Input Decorator](https://angular.dev/guide/components/inputs#declaring-inputs-with-the-input-decorator)
+- [Output Decorator](https://angular.dev/guide/components/outputs#declaring-outputs-with-the-output-decorator)
 
+## Notes
+
+- By default, starting with Angular v19, all components are standalone unless the attribute `standalone: false` is set
+- If you have created your app with a cli version of v19 or higher, the cli will by default create for you a standalone config app. (that means no `app.module.ts` is present, and you only have an `app.config.ts`)
+- Continue using the `@Input` and `@Output` decorator for now.
 
 ## Online Shop
 
+>
 > Create a new Angular Module for the shopping cart functionality called `ShoppingCartModule`
 >
-> Create a new Angular Component for displaying a shopping cart (separate it into container and presentational).
+> Create a new Angular Component for displaying a shopping cart (separate it into container and presentational). Mark the components with a "standalone: false" flag in the @Component decorator.
 >
-> Add the new Component to the declaration of the `ShoppingCartModule`
+> Add the new components to the declaration of the `ShoppingCartModule`
 >
 > Import `ShoppingCartModule` inside of your `AppModule` imports array
 > 
-> To test it, add the selector of your shopping cart in the app.component.html just to view it
+> To test it, add the selector of your shopping cart in the app.component.html just to view it and import the module in your app.component.ts imports array.
 >
+> Test the previous implementation that it worked.
 > 
-> Now, let's create a standalone component for a Button which will be used to display icons inside it (think the remove button, the shopping cart button from the mockup)
+> Convert the previous component back to a standalone and import it properly in your app.component.ts, get rid of the module.
 > 
-> Create a new folder called `shared` (as per structure) and inside it create a component which receives a string specifying an `icon type` as an `@Input` and has an `@Output` to emit an event `onClick`
-> 
-> Call this new component `IconButton`
-> 
-> Mark the component as `standalone` and use it in your shopping cart module for the remove button (you need just import in the `ShoppingCartModule`)
->
-> Test your application displays the components correctly
-> 
-> As a final step, to be correct let move the `product.types` from the root types folder to the `shared` module
-> 
-> Correct the imports in your application and test that it works without any errors in the browser console
 
 ### Folder Structure
 ```text
@@ -51,12 +48,6 @@
 │   │   ├── shared
 │   │   │   ├── types
 │   │   │       ├── product.types
-│   │   │   ├── components
-│   │   │   │   ├── presentational
-│   │   │   │       ├── icon-button
-│   │   │   │           ├── icon-button.component.ts
-│   │   │   │           ├── icon-button.component.html
-│   │   │   │           ├── icon-button.component.scss
 │   │   ├── shopping-cart
 │   │   │   ├── shopping-cart.module.ts
 │   │   │   ├── components
@@ -74,5 +65,6 @@
 ```
 
 ## Further Resources (Optional):
-- [Feature Modules](https://angular.io/guide/feature-modules)
-- [Shared Modules](https://angular.io/guide/sharing-ngmodules)
+- [Feature Modules](https://angular.dev/guide/ngmodules/overview#the-forroot-and-forchild-pattern)
+- [Shared Modules](https://angular.dev/guide/ngmodules/overview)
+- [Modules vs Standalone](https://www.lynkz.com.au/blog/2024-angular-standalone-vs-modules)

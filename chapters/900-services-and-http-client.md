@@ -1,4 +1,4 @@
-# 8. Services and the HTTP Client [3h]
+# 9. Services and the HTTP Client [3h]
 
 **Goal:** practice with Angular HttpClient by connecting your frontend with the backend server
 
