@@ -11,7 +11,7 @@
 
 **Reading**
 
-- [Introduction to Modules](https://angular.dev/guide/ngmodules/overview) (Modules are becoming deprecated slowly, the link is kept to the old documentation)
+- [Introduction to Modules](https://angular.dev/guide/ngmodules/overview) (Modules are becoming deprecated slowly)
 - [Complete Guide to Modules](https://blog.angular-university.io/angular2-ngmodule/)
 - [Standalone Components](https://angular.io/guide/standalone-components)
 - [Input Decorator](https://angular.dev/guide/components/inputs#declaring-inputs-with-the-input-decorator)
