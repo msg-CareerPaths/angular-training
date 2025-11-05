@@ -6,6 +6,8 @@
 
 Recall the previous chapter material regarding `Observables` and unsubscribing them.
 
+If you are using signals, consider using the interop methods provided in the reading section.
+
 ## Mandatory Materials
 
 **Videos**
@@ -15,9 +17,18 @@ Recall the previous chapter material regarding `Observables` and unsubscribing t
 **Reading**
 
 - [Quick start guide](https://blog.angular-university.io/angular-http/)
-- [Angular Http Tutorial](https://www.tutorialspoint.com/angular6/angular6_http_client.htm)
-- [Official docs](https://angular.io/guide/http)
-- [Environment Files](https://angular.io/guide/build)
+- [Creating a service](https://angular.dev/guide/di/creating-and-using-services)
+- [Dependency Injection](https://angular.dev/guide/di)
+- [Angular Http](https://angular.dev/guide/http)
+- [Environment Files](https://angular.dev/tools/cli/environments)
+- [RxJS Interop for Signals](https://angular.dev/ecosystem/rxjs-interop)
+- [Dependency Injection explained in Angular](https://blog.logrocket.com/how-dependency-injection-works-in-angular/)
+- [Injection Context](https://angular.dev/guide/di/dependency-injection-context)
+
+### Rules
+
+- Mark your services with `@Injectable({providedIn: 'root'})`
+- Do
 
 ## Online Shop:
 
@@ -44,7 +55,7 @@ The logic you are currently developing should be added to the `container` compon
 │   ├── app
 │       ├── services
 │       │   ├── products.service.ts
-│       ├── modules
+│       ├── features
 │           ├── shopping-cart
 │               ├── services
 │                   ├── shopping-cart.service.ts
@@ -54,6 +65,7 @@ The logic you are currently developing should be added to the `container` compon
 
 ## Further Resources (Optional):
 
-- [Http error handling](https://angular.io/guide/http#error-handling)
-- [CORS: Proxy-ing a backend server](https://angular.io/guide/build#proxying-to-a-backend-server)
-- [HTTP Interceptor](https://ultimatecourses.com/blog/intro-to-angular-http-interceptors)
+- [Http error handling](https://angular.dev/guide/http/making-requests#handling-request-failure)
+- [Proxy-ing to a backend server](https://angular.dev/tools/cli/serve#proxying-to-a-backend-server)
+- [HTTP Interceptor](https://angular.dev/guide/http/interceptors)
+- [Injection Tokens](https://angular.dev/guide/di/defining-dependency-providers#injection-tokens)

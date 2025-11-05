@@ -15,10 +15,19 @@
   - [Angular First App 02](https://angular.dev/tutorials/first-app/02-Home)
   - [Angular First App 08](https://angular.dev/tutorials/first-app/08-ngFor) (stop here)
 - [Presentational and Container Components Style](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+- [Lifecycle Events in Angular](https://angular.dev/guide/components/lifecycle)
+  - [ngOnInit](https://angular.dev/guide/components/lifecycle#ngoninit)
+  - [ngOnChanges](https://angular.dev/guide/components/lifecycle#ngonchanges)
+  - [ngOnDestroy](https://angular.dev/guide/components/lifecycle#ngondestroy)
 - [Debugging in Angular](https://medium.com/@vamsivempati/a-guide-to-debugging-angular-applications-5a36bd88b4cf)
 - [Using Angular DevTools](https://angular.dev/tools/devtools)
 - [Input Decorator](https://angular.dev/guide/components/inputs#declaring-inputs-with-the-input-decorator)
 - [Output Decorator](https://angular.dev/guide/components/outputs#declaring-outputs-with-the-output-decorator)
+- [Control Flow Syntax](https://blog.logrocket.com/control-flow-syntax-angular-17/)
+
+## Rules
+
+- We are using for now the old decorator way (@Input and @Decorator), so you get familiar since you might encounter them in old apps you will develop.
 
 ## Online Shop
 
@@ -63,8 +72,10 @@ For the moment, we will use mock data across all components. The data will be de
 
 ## Further Resources (Optional):
 
-- [The `@for` directive](https://angular.dev/guide/templates/control-flow#repeat-content-with-the-for-block)
-- [The `@if` directive](https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else)
+- [The `@for` block](https://angular.dev/guide/templates/control-flow#repeat-content-with-the-for-block)
+- [The `@if` block](https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else)
+- [The `@switch` block](https://angular.dev/api/core/@switch)
+- [The `@let` block](https://angular.dev/api/core/@let)
 - [Types of Bindings](https://angular.dev/guide/templates/binding)
     - [Attribute Binding](https://angular.dev/guide/templates/binding#attributes)
     - [Property Binding](https://angular.dev/guide/templates/binding#binding-dynamic-properties-and-attributes)

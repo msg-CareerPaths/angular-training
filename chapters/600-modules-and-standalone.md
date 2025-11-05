@@ -44,12 +44,13 @@
 ### Folder Structure
 ```text
 ├── src/app
-│   ├── modules
+│   ├── features
 │   │   ├── shared
 │   │   │   ├── types
 │   │   │       ├── product.types
 │   │   ├── shopping-cart
-│   │   │   ├── shopping-cart.module.ts
+│   │   │   ├── shopping-cart.module.ts (remove this after you are done)
+│   │   │   ├── shopping-cart.routes.ts (add this when you switch to standalone)
 │   │   │   ├── components
 │   │   │       ├── containers
 │   │   │       │   ├── shopping-cart-details

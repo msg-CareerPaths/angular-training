@@ -74,10 +74,14 @@ This timeline is just for guidance, take time to understand the concepts before 
 ## Mentions
 
 This section is dedicated to the open source contributors we have used when creating the tutorial, and we want to acknowledge for their educational content.
+- [Angular Team](https://angular.io)
 - [Fireship](https://www.youtube.com/@Fireship) for most of the videos in the training.
 - [WebDevSimplified](https://www.youtube.com/@WebDevSimplified)
 - [TheNewBoston](https://www.youtube.com/user/thenewboston)
-- [Angular Team](https://angular.io)
+- [Angular University](https://angular-university.io/)
+- [LogRocket](https://blog.logrocket.com)
+- [Rainer Hahnekamp](https://www.youtube.com/@RainerHahnekamp)
+- [Joshua Morony](https://www.youtube.com/@JoshuaMorony)
 - [JetBrains](https://www.youtube.com/@JetBrainsTV)
 - [VSCode](https://www.youtube.com/@code)
 - All other authors of the various links used
