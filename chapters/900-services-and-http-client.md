@@ -28,7 +28,6 @@ If you are using signals, consider using the interop methods provided in the rea
 ### Rules
 
 - Mark your services with `@Injectable({providedIn: 'root'})`
-- Do
 
 ## Online Shop:
 
