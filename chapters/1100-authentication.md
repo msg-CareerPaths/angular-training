@@ -1,4 +1,4 @@
-# 10. Authentication, Authorization and Guards [3h]
+# 11. Authentication, Authorization and Guards [3h]
 
 **Goal:** get familiar with Route Guards and protect your app's routes from unauthorized access.
 
@@ -10,10 +10,10 @@
 2. [Auth Interceptor](https://youtu.be/suTtA0Hlwlk)
 
 **Reading**
-- [Angular Interceptors](https://angular.io/guide/http#intercepting-requests-and-responses)
+- [Angular Interceptors](https://angular.dev/guide/http/interceptors)
 - [Auth Interceptor](https://medium.com/@ryanchenkie_40935/angular-authentication-using-the-http-client-and-http-interceptors-2f9d1540eb8)
     - Store the `jwt` token in [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-- [Route Guards](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)
+- [Route Guards](https://angular.dev/guide/routing/route-guards)
 
 ### Notes from the Mock Backend
 - It uses JWT for authentication.
@@ -21,6 +21,10 @@
     - `http://localhost:3000/api/auth/profile` needs a JWT token in the request headers for it to work.
     - The other API paths are not secured.
 - Check `src/assets/users.json` for more information regarding already available users.
+
+### Rules
+
+- Make the interceptor and guard functional as per the new styleguide.
 
 ## Online Shop:
 
@@ -44,7 +48,7 @@
 │   │   ├── auth.interceptor.ts
 │   ├── services
 │   │   ├── auth.service.ts
-│   ├── modules
+│   ├── features
 │       ├── shared
 │           ├── types
 │               ├── users.types
@@ -54,5 +58,4 @@
 ## Further Resources (Optional):
 
 - [Angular Role-based Authorization](https://jasonwatmore.com/post/2018/11/22/angular-7-role-based-authorization-tutorial-with-example)
-- [Angular Authentication: Using Route Guards](https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-bf7a4ca13ae3)
 

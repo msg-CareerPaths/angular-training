@@ -1,4 +1,5 @@
 # OPT-3. Unit Testing
+> ⚠️ **Deprecated:** This optional module is no longer up to date.  
 
 **Goal:** Write some unit tests for some of your services and NGRX objects. Understand why testing is important even though it's painful.
 

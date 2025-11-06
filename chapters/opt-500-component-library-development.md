@@ -1,4 +1,5 @@
 # OPT-5. Component Library Development
+> ⚠️ **Deprecated:** This optional module is no longer up to date.
 
 ## Mandatory Materials
 

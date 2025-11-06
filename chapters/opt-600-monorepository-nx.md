@@ -1,4 +1,5 @@
 # OPT-6. Mono-Repository with Nx
+> ⚠️ **Deprecated:** This optional module is no longer up to date.
 
 ## Mandatory Materials
 

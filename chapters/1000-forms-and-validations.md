@@ -1,4 +1,4 @@
-# 9. Forms and Validation [3h]
+# 10. Forms and Validation [3h]
 
 **Goal:** dive into Angular Forms and add them to your project.
 
@@ -6,17 +6,16 @@
 
 **Videos**
 
-1. [Reactive Forms - The Basics](https://www.youtube.com/watch?v=JeeUY6WaXiA)
-2. [Typed Forms in Angular](https://youtu.be/L-odCf4MfJc)
+1. [Reactive Forms—The Basics](https://www.youtube.com/watch?v=JeeUY6WaXiA)
+2. [Typed Forms in Angular](https://www.youtube.com/watch?v=L-odCf4MfJc)
 
 **Reading**
 
-- [Forms overview](https://angular.io/guide/forms-overview)
-- [Reactive Forms](https://angular.io/guide/reactive-forms) (focus on this)
-- [Angular First App 12: Forms](https://angular.io/tutorial/first-app/first-app-lesson-12)
-- [Validating Form Input](https://angular.io/guide/form-validation)
-- [Form Validation: Reactive Forms](https://angular.io/guide/form-validation#validating-input-in-reactive-forms)
-- [Forms tutorial](https://www.tutorialspoint.com/angular6/angular6_forms.htm)
+- [Forms overview](https://angular.dev/guide/forms)
+- [Reactive Forms](https://angular.dev/guide/forms/reactive-forms) (focus on this)
+- [Angular First App 12: Forms](https://angular.dev/tutorials/first-app/12-forms)
+- [Validating Form Input](https://angular.dev/guide/forms/form-validation)
+- [Form Group and Form Controls in Angular](https://blog.logrocket.com/formgroup-formcontrol-angular/)
 
 
 ## Online Shop:
@@ -49,4 +48,4 @@ Recall that the logic should be added to the `container` components and the pres
 ## Further Resources (Optional):
 
 - [Custom form controls](https://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html)
-- [ControlValueAccessor](https://angular.io/api/forms/ControlValueAccessor)
+- [ControlValueAccessor](https://angular.dev/api/forms/ControlValueAccessor)

@@ -11,7 +11,7 @@
 **Reading**
 - [Introduction to E2E Testing](https://testing-angular.com/end-to-end-testing/#end-to-end-testing)
 - [Cypress and Angular: Getting Started](https://medium.com/angular-in-depth/get-started-with-cypress-d6ac4b910605)
-- [Getting started with Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
+- [Getting started with Cypress](https://docs.cypress.io/app/get-started/install-cypress)
 
 ## Online Shop:
 
