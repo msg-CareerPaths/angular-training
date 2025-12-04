@@ -28,7 +28,7 @@ Therefore, after saving/editing your file try to make it an ingrained action for
 >
 > Create a new project in the root of your git repository by using the CLI: `ng new online-shop --style=scss`.
 >
-> Navigate inside the project folder, Start the project and open its home page in your browser: `ng serve --start`.
+> Navigate inside the project folder, Start the project and open its home page in your browser: `ng serve --open`.
 
 ## Further Resources (Optional):
 
