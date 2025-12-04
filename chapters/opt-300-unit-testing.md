@@ -28,5 +28,6 @@
 - [Angular component testing with examples](https://medium.com/@bencabanes/angular-component-testing-with-examples-7c52b2b7035e)
 - [NGRX Testing: Guide](https://christianlydemann.com/the-complete-guide-to-ngrx-testing/)
 - [NGRX Example App (has tests)](https://github.com/ngrx/platform/tree/master/projects/example-app/src/app/core)
+- [NGRX: Marble Testing Example](https://github.com/blove/ngrx-testing/blob/master/src/app/state/user/user.effects.spec.ts)
 - [Angular: Component Harness](https://angular.dev/guide/testing/component-harnesses-overview)
 - [Angular: Using Component Harness](https://angular.dev/guide/testing/using-component-harnesses)
