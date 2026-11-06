@@ -1,6 +1,6 @@
 # 7. Signals [1 day]
 
-**Goal:** Understanding signals and how they replace and enhance the application. 
+**Goal:** Understanding signals and how they replace and enhance the application, and how they enable a more reactive approach.
 
 We have used until now the old way of using the @Input and @Output decorators because some of the older apps you might work on still use them.
 
@@ -28,7 +28,7 @@ We have used until now the old way of using the @Input and @Output decorators be
 
 ### Rules
 
-- All your components should switch to an [OnPush](https://angular.dev/best-practices/skipping-subtrees) change detection strategy.
+- All your components should switch to an [OnPush](https://angular.dev/best-practices/skipping-subtrees) change detection strategy. (Starting with **Angular 22**, OnPush is the default change detection strategy)
 - All your components should use signals as much as possible going forward.
   - Use [RxJs Interops](https://angular.dev/ecosystem/rxjs-interop) when needed.
 - Avoid using effects unless a common sense rule applies ([see this also](https://angular.dev/guide/signals#use-cases-for-effects):
@@ -44,7 +44,7 @@ We have used until now the old way of using the @Input and @Output decorators be
     - Fetching data from an API when a signal changes. (use untracked as safety net)
     - As a bridge between reactive context and non-reactive context (e.g.: updating form when signal changes)
 ```
-- Don't use [resources](https://angular.dev/guide/signals/resource) (at the moment of writing they are still experimental)
+- [resources](https://angular.dev/guide/signals/resource) stable starting with Angular 22
 - Use the [inject](https://angular.dev/api/core/inject) function going forward.
 
 
