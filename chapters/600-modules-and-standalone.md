@@ -68,4 +68,4 @@
 ## Further Resources (Optional):
 - [Feature Modules](https://angular.dev/guide/ngmodules/overview#the-forroot-and-forchild-pattern)
 - [Shared Modules](https://angular.dev/guide/ngmodules/overview)
-- [Modules vs Standalone](https://www.lynkz.com.au/blog/2024-angular-standalone-vs-modules)
+- [Modules vs Standalone](https://www.angular.courses/modern-angular-path/modules/standalone-vs-ngmodules)
