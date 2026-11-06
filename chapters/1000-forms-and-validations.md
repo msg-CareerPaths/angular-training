@@ -49,3 +49,31 @@ Recall that the logic should be added to the `container` components and the pres
 
 - [Custom form controls](https://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html)
 - [ControlValueAccessor](https://angular.dev/api/forms/ControlValueAccessor)
+
+## Optional: Explore Signal Forms (Angular 22)
+
+Angular 22 provides **Signal Forms**, a newer approach to building forms using Angular Signals.
+
+Once you have completed the Reactive Forms implementation, build on your existing knowledge of Angular Signals by exploring Signal Forms and understanding how they differ from the traditional Reactive Forms approach
+
+**Recommended Reading**
+
+- [Signal Forms Overview](https://angular.dev/guide/forms/signals/overview)
+- [Signal Forms — Form Models](https://angular.dev/guide/forms/signals/models)
+- [Signal Forms — Validation](https://angular.dev/guide/forms/signals/validation)
+- [Signal Forms — Comparison with Other Form Systems](https://angular.dev/guide/forms/signals/comparison)
+
+**Optional Exercise**
+
+Try implementing a small version of the product form using Signal Forms.
+
+**Focus on understanding:**
+- How form models are created
+- How form fields are connected to the template
+- How validation rules are defined
+- How validation errors are displayed
+- How form values are submitted
+
+Compare the Signal Forms implementation with your Reactive Forms implementation
+
+Do not replace your Reactive Forms implementation with Signal Forms - this is only to explore Angular's newer approach to form management.
