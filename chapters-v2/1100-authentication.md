@@ -1,4 +1,4 @@
-# 12. Authentication, Authorization and Guards [3h]
+# 11. Authentication, Authorization and Guards [3h]
 
 ## Introduction
 

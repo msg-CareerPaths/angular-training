@@ -1,4 +1,4 @@
-# 10. Services and the HTTP Client [3h]
+# 9. Services and the HTTP Client [3h]
 
 ## Introduction
 

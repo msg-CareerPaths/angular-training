@@ -27,7 +27,7 @@ A grab-bag of frontend material worth reading at some point. No order required.
 - [BEM: Block Element Modifier](http://getbem.com)
 - [JS: Event Bubbling and Capturing](https://javascript.info/bubbling-and-capturing)
 - [AOT vs JIT in Angular](https://www.geeksforgeeks.org/what-is-aot-and-jit-compiler-in-angular/)
-- [Angular: Modules](https://angular.dev/guide/ngmodules) *(legacy context — see Chapter 14)*
+- [Angular: Modules](https://angular.dev/guide/ngmodules) *(legacy context — see Chapter 13)*
 - [Angular: Lazy loading feature modules](https://angular.dev/guide/routing/common-router-tasks#lazy-loading)
 - [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 - [Local Storage vs Session Storage vs Cookies](https://krishankantsinghal.medium.com/local-storage-vs-session-storage-vs-cookie-22655ff75a8)

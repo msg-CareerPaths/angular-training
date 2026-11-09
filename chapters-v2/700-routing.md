@@ -1,8 +1,8 @@
-# 8. Routing [2h – 3h]
+# 7. Routing [2h – 3h]
 
 ## Introduction
 
-Routing turns URL paths into views. In this chapter you add navigation to the Online Shop: a product list at one URL, a product detail at another. **This chapter is deliberately RxJS-free** — route params are read via **signal inputs** (Angular's `withComponentInputBinding`) or snapshots. The RxJS side of routing (params as Observables, `combineLatest`, etc.) lives in [Chapter 9](900-rxjs.md).
+Routing turns URL paths into views. In this chapter you add navigation to the Online Shop: a product list at one URL, a product detail at another. **This chapter is deliberately RxJS-free** — route params are read via **signal inputs** (Angular's `withComponentInputBinding`) or snapshots. The RxJS side of routing (params as Observables, `combineLatest`, etc.) lives in [Chapter 8](800-rxjs.md).
 
 ## Goal
 
@@ -59,7 +59,7 @@ By the end of this chapter you should be able to explain:
 - [Angular Routing](https://angular.dev/guide/routing)
 - [Common router tasks](https://angular.dev/guide/routing/common-router-tasks)
 - [`withComponentInputBinding` — route params as signal inputs](https://angular.dev/api/router/withComponentInputBinding)
-- [Reading route state](https://angular.dev/guide/routing/read-route-state) — focus on the **snapshot** section; the observable-based section is Chapter 9's material.
+- [Reading route state](https://angular.dev/guide/routing/read-route-state) — focus on the **snapshot** section; the observable-based section is Chapter 8's material.
 - [Lazy loading](https://angular.dev/guide/routing/common-router-tasks#lazy-loading)
 
 ## Testing

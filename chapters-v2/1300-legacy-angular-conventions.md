@@ -1,4 +1,4 @@
-# 14. Legacy Angular Conventions [2h – 3h]
+# 13. Legacy Angular Conventions [2h – 3h]
 
 ## Introduction
 
@@ -19,7 +19,7 @@ By the end of this chapter you should be able to explain:
 - `NgModule` basics — `declarations`, `imports`, `providers`, `exports` — and how a feature module hangs together.
 - **Class-based** `HttpInterceptor` and **class-based** route guards (`CanActivate`), and why they were replaced by the functional forms.
 - The old change-detection story: `ChangeDetectionStrategy.OnPush` was opt-in; `ChangeDetectorRef.markForCheck()` was common.
-- Classical NgRx briefly (actions / reducers / effects / selectors) — see [Chapter 13's optional section](1300-ngrx.md#optional-classical-ngrx-store-actions--reducers--selectors--effects).
+- Classical NgRx briefly (actions / reducers / effects / selectors) — see [Chapter 12's optional section](1200-ngrx.md#optional-classical-ngrx-store-actions--reducers--selectors--effects).
 
 ### Practice
 
@@ -60,7 +60,7 @@ This is a reading-and-recognizing chapter. Do each exercise in a **throwaway bra
 **Videos**
 
 - [Angular decorators explained](https://www.youtube.com/watch?v=O6P86uwfdR0) *(older but conceptually accurate)*
-- [Why Angular moved away from NgModules](https://youtu.be/x5PZwb4XurU) *(review from Ch 6)*
+- [Standalone Components (why Angular moved away from NgModules)](https://youtu.be/x5PZwb4XurU)
 
 ## Testing
 

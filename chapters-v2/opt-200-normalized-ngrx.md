@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This chapter is a deeper dive into **classical NgRx** (see [Chapter 13](1300-ngrx.md)'s optional section for the primer). It assumes you've already built the main Online Shop state with Signal Store and now want to see what the Redux-style approach looks like, with the state **normalized** for efficient updates.
+This chapter is a deeper dive into **classical NgRx** (see [Chapter 12](1200-ngrx.md)'s optional section for the primer). It assumes you've already built the main Online Shop state with Signal Store and now want to see what the Redux-style approach looks like, with the state **normalized** for efficient updates.
 
 Only pick this up if you specifically want exposure to classical NgRx.
 

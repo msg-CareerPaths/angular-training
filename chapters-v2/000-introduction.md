@@ -76,13 +76,12 @@ It has a "shopping cart":
 ### Timeline (guidance only)
 
 - **Day 1**: Chapter 0, 1, 2, 3
-- **Day 2**: Chapter 4, 5
-- **Day 3**: Chapter 6 — **open a PR**, address review, merge, branch again
-- **Day 4**: Chapter 7
-- **Day 5**: Chapter 8, 9, 10
-- **Day 6**: Chapter 11, 12 — **open a PR**, address review, merge, branch again
-- **Day 7**: Chapter 13, 14, 15
-- **Day 8**: Optional chapters or review fixes / refactor
+- **Day 2**: Chapter 4, 5 — **open a PR**, address review, merge, branch again
+- **Day 3**: Chapter 6
+- **Day 4**: Chapter 7, 8, 9
+- **Day 5**: Chapter 10, 11 — **open a PR**, address review, merge, branch again
+- **Day 6**: Chapter 12, 13, 14
+- **Day 7**: Optional chapters or review fixes / refactor
 
 ### Mentions
 

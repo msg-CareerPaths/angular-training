@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Components are the unit of UI in Angular. Starting with Angular 22, the modern way is: **standalone** components, **signal** inputs/outputs, **native control flow** (`@if`, `@for`, `@switch`), and `inject()` for dependencies. That is the only style used in this chapter — the legacy decorator style (`@Input()`, `@Output()`, `*ngIf`, `*ngFor`) is covered in [Chapter 14](1400-legacy-angular-conventions.md).
+Components are the unit of UI in Angular. Starting with Angular 22, the modern way is: **standalone** components, **signal** inputs/outputs, **native control flow** (`@if`, `@for`, `@switch`), and `inject()` for dependencies. That is the only style used in this chapter — the legacy decorator style (`@Input()`, `@Output()`, `*ngIf`, `*ngFor`) and `NgModule` are covered in [Chapter 13](1300-legacy-angular-conventions.md).
 
 ## Goal
 
@@ -26,16 +26,19 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 >
 > Create a component for displaying a list of products. Use the `@for` block.
 >
+> Create a shopping-cart component (one container + one presentational) that renders a list of mock cart items and a total.
+>
 > Use `input()` and `output()` (signal-based) to wire data between parent and child components.
 >
 > Add CSS to each component so it roughly matches the mockups.
 >
-> To test them, place their selector in `app.component.html`.
+> To test them, place their selectors in `app.component.html` and import the containers into `app.component.ts`'s `imports` array.
 
 #### Rules
 
 - Every component in this chapter should be **standalone** (the default in Angular 22) and use **signal inputs/outputs**.
 - Use native control flow (`@if`, `@for`, `@switch`) — avoid the legacy structural directives.
+- Note that Angular 22's CLI scaffolds standalone components by default: `app.config.ts` + `bootstrapApplication()` replace the old `app.module.ts`. For the legacy `NgModule` path, see [Chapter 13](1300-legacy-angular-conventions.md).
 
 #### Folder Structure
 
@@ -48,18 +51,26 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 │   │   │   │   ├── products-list.scss
 │   │   │   │   ├── products-list.html
 │   │   │   ├── products-details
-│   │   │       ├── products-details.ts
-│   │   │       ├── products-details.scss
-│   │   │       ├── products-details.html
+│   │   │   │   ├── products-details.ts
+│   │   │   │   ├── products-details.scss
+│   │   │   │   ├── products-details.html
+│   │   │   ├── shopping-cart-details
+│   │   │       ├── shopping-cart-details.ts
+│   │   │       ├── shopping-cart-details.scss
+│   │   │       ├── shopping-cart-details.html
 │   │   ├── presentational          -- the view-only part
 │   │       ├── products-list-view
 │   │       │   ├── products-list-view.ts
 │   │       │   ├── products-list-view.scss
 │   │       │   ├── products-list-view.html
 │   │       ├── products-details-view
-│   │           ├── products-details-view.ts
-│   │           ├── products-details-view.scss
-│   │           ├── products-details-view.html
+│   │       │   ├── products-details-view.ts
+│   │       │   ├── products-details-view.scss
+│   │       │   ├── products-details-view.html
+│   │       ├── shopping-cart-details-view
+│   │           ├── shopping-cart-details-view.ts
+│   │           ├── shopping-cart-details-view.scss
+│   │           ├── shopping-cart-details-view.html
 │   ├── types
 │   │   ├── products.types.ts       -- interface for Product
 │   ├── mocks
@@ -93,6 +104,10 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 >
 > - Render the component with a mock list of products and assert the DOM shows one row per product.
 > - Emit an output (e.g. "view details") from a child element and assert the parent's spy was called.
+>
+> Add a test for the `shopping-cart-details` container:
+>
+> - Render it with a mock cart of a few items and assert the total line-item count and the rendered total price.
 >
 > Reference: [Angular testing — components basics](https://angular.dev/guide/testing/components-basics).
 

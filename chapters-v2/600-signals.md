@@ -1,4 +1,4 @@
-# 7. Signals [1 day]
+# 6. Signals [1 day]
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# 9. RxJS [3h]
+# 8. RxJS [3h]
 
 ## Introduction
 
@@ -25,14 +25,14 @@ By the end of this chapter you should be able to explain:
 
 ### Practice
 
-> Convert one route parameter read in your Online Shop from the signal-input form (Chapter 8) to an Observable form, and back. Keep the signal-input form as the final state — this is just to feel both shapes.
+> Convert one route parameter read in your Online Shop from the signal-input form (Chapter 7) to an Observable form, and back. Keep the signal-input form as the final state — this is just to feel both shapes.
 >
 > Specifically:
 >
 > - In the product-detail component, inject `ActivatedRoute` with `inject(ActivatedRoute)`.
 > - Subscribe to `paramMap` and log the id when it changes. Use `takeUntilDestroyed()` so the subscription cleans up with the component.
 > - Rewrite that same code using `toSignal(route.paramMap)` and log via a `computed()`. Compare.
-> - Revert to the signal-input approach from Chapter 8 for the actual app code.
+> - Revert to the signal-input approach from Chapter 7 for the actual app code.
 
 #### Rules
 
