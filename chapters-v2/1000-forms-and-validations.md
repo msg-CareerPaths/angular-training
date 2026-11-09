@@ -13,7 +13,7 @@ By the end of this chapter you should be able to explain:
 - The difference between Template-driven and Reactive Forms (and why we use Reactive here).
 - `FormGroup`, `FormControl`, and `FormArray`, and how typed forms work.
 - Built-in validators (`required`, `min`, `max`, `pattern`) and how to write a custom one.
-- How to subscribe to `valueChanges` safely (recall Chapter 8 — use `takeUntilDestroyed()` or `| async`).
+- How to subscribe to `valueChanges` safely (recall Chapter 7 — use `takeUntilDestroyed()` or `| async`).
 - How to display validation errors and how to submit a form.
 
 ### Practice

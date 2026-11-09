@@ -1,10 +1,10 @@
-# 8. RxJS [3h]
+# 7. RxJS [3h]
 
 ## Introduction
 
-RxJS is a library for working with **streams of values over time**. Angular uses it under the hood for `HttpClient`, forms' `valueChanges`, and router params. You will not write giant RxJS pipelines in this training — signals handle most of the UI reactivity — but you must be able to read RxJS, subscribe safely, and bridge it to signals.
+RxJS is a library for working with **streams of values over time**. Before signals, it was the de-facto reactive primitive in Angular — every existing codebase you join will be full of it. Angular still uses it under the hood for `HttpClient`, forms' `valueChanges`, router params, and much more.
 
-This content used to live inside the Routing chapter. It's its own chapter now because RxJS is a distinct mental model worth a focused pass.
+You just learned signals in Chapter 6; this chapter is the twin story. You won't write giant RxJS pipelines in this training — signals handle most of the UI reactivity — but you must be able to read RxJS, subscribe safely, and bridge it to signals (and vice-versa).
 
 ## Goal
 
@@ -20,19 +20,25 @@ By the end of this chapter you should be able to explain:
   - manual `Subscription.unsubscribe()` in `ngOnDestroy`.
 - What a **Subject** is, and how **BehaviorSubject** relates to a signal.
 - Common operators you will actually use: `map`, `filter`, `switchMap`, `tap`, `catchError`, `combineLatest`, `distinctUntilChanged`.
-- Reading route params as Observables: `ActivatedRoute.paramMap`, `queryParamMap`.
 - Converting between RxJS and signals: `toSignal()` and `toObservable()`.
+- Where you'll meet RxJS in Angular even if you write signal-first code: `HttpClient` return values (Chapter 9), form `valueChanges` (Chapter 10), router params (Chapter 8).
 
 ### Practice
 
-> Convert one route parameter read in your Online Shop from the signal-input form (Chapter 7) to an Observable form, and back. Keep the signal-input form as the final state — this is just to feel both shapes.
+> This chapter is exploration-only — nothing to merge into the Online Shop permanently. Work in a throwaway branch or a scratch component.
 >
-> Specifically:
+> **Exercise 1 — Observable vs signal.** In a scratch component (or `app.component.ts`), expose a `BehaviorSubject<number>` incremented by a button. Read it in the template two ways:
 >
-> - In the product-detail component, inject `ActivatedRoute` with `inject(ActivatedRoute)`.
-> - Subscribe to `paramMap` and log the id when it changes. Use `takeUntilDestroyed()` so the subscription cleans up with the component.
-> - Rewrite that same code using `toSignal(route.paramMap)` and log via a `computed()`. Compare.
-> - Revert to the signal-input approach from Chapter 7 for the actual app code.
+> - With `| async`.
+> - With `toSignal(subject)` and render the signal in the template.
+>
+> Confirm both render the same value. Note that `toSignal` auto-cleans the subscription.
+>
+> **Exercise 2 — takeUntilDestroyed.** In the same scratch component, `subject.subscribe(v => console.log(v))` directly in a field initializer and chain `.pipe(takeUntilDestroyed())`. Destroy the component (navigate away or remove it from the template) and confirm the logging stops.
+>
+> **Exercise 3 — RxJS → signal → RxJS.** Create a `signal(0)`, convert it to an Observable with `toObservable()`, pipe it through `map(v => v * 2)`, and subscribe. Update the signal and watch the values flow.
+>
+> **Discard the branch.** You will not keep this code; the Online Shop stays signal-first. The point of the chapter is pattern recognition and the interop bridges — when you reach Routing in Chapter 8, you'll know that `ActivatedRoute.paramMap` is an Observable and *why* we still prefer signal inputs there.
 
 #### Rules
 
@@ -55,8 +61,7 @@ By the end of this chapter you should be able to explain:
 - [`takeUntilDestroyed`](https://angular.dev/ecosystem/rxjs-interop/take-until-destroyed)
 - [`AsyncPipe`](https://angular.dev/api/common/AsyncPipe)
 - [Subjects](https://www.learnrxjs.io/learn-rxjs/subjects) — note that a signal behaves most like a `BehaviorSubject`.
-- [Reading route state — observable form](https://angular.dev/guide/routing/read-route-state#reading-parameters-on-a-route)
-- [RxJS interop](https://angular.dev/ecosystem/rxjs-interop)
+- [RxJS interop](https://angular.dev/ecosystem/rxjs-interop) — `toSignal`, `toObservable`, and when to reach for each.
 
 ## Testing
 

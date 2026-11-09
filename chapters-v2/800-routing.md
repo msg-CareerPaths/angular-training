@@ -1,8 +1,10 @@
-# 7. Routing [2h – 3h]
+# 8. Routing [2h – 3h]
 
 ## Introduction
 
-Routing turns URL paths into views. In this chapter you add navigation to the Online Shop: a product list at one URL, a product detail at another. **This chapter is deliberately RxJS-free** — route params are read via **signal inputs** (Angular's `withComponentInputBinding`) or snapshots. The RxJS side of routing (params as Observables, `combineLatest`, etc.) lives in [Chapter 8](800-rxjs.md).
+Routing turns URL paths into views. In this chapter you add navigation to the Online Shop: a product list at one URL, a product detail at another.
+
+You already know from [Chapter 7](700-rxjs.md) that `ActivatedRoute` exposes params as Observables (`paramMap`, `queryParamMap`). You could subscribe to those — and plenty of older codebases do. **In this training we prefer signal inputs via `withComponentInputBinding()`** for route params: no subscription to manage, no `takeUntilDestroyed`, the value just arrives as a signal. We'll mention the Observable form for recognition only.
 
 ## Goal
 
@@ -59,7 +61,7 @@ By the end of this chapter you should be able to explain:
 - [Angular Routing](https://angular.dev/guide/routing)
 - [Common router tasks](https://angular.dev/guide/routing/common-router-tasks)
 - [`withComponentInputBinding` — route params as signal inputs](https://angular.dev/api/router/withComponentInputBinding)
-- [Reading route state](https://angular.dev/guide/routing/read-route-state) — focus on the **snapshot** section; the observable-based section is Chapter 8's material.
+- [Reading route state](https://angular.dev/guide/routing/read-route-state) — the **snapshot** section is what you'll use here; the Observable-based `paramMap` section is the RxJS-flavored alternative from [Chapter 7](700-rxjs.md).
 - [Lazy loading](https://angular.dev/guide/routing/common-router-tasks#lazy-loading)
 
 ## Testing
