@@ -21,7 +21,7 @@ By the end of this chapter you should be able to explain:
 
 > Add a button next to each product in the product list that navigates to the product's detail page.
 >
-> From the detail page, add a "Add to Cart" button (hooks up properly in later chapters).
+> From the detail page, add an "Add to Cart" button (hooks up properly in later chapters).
 >
 > Wire routing: register `app.routes.ts` in `app.config.ts`, add `<router-outlet>` to `app.component.html`.
 >

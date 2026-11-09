@@ -36,9 +36,9 @@ All the code written must be published on GitHub.
 
 **Environment Setup** — install on your local machine:
 
-- [NodeJS](https://nodejs.org/en/) (latest LTS, 22.x or newer at time of writing).
+- [Node.js](https://nodejs.org/en/) (latest LTS, 22.x or newer at time of writing).
 - An IDE:
-  - [Webstorm](https://www.jetbrains.com/webstorm/) (Non-Commercial Version), or
+  - [WebStorm](https://www.jetbrains.com/webstorm/) (Non-Commercial Version), or
   - [VSCode](https://code.visualstudio.com/download).
 - [Git](https://git-scm.com).
 - [Notepad++](https://notepad-plus-plus.org/downloads/) — convenient plain-text editor.
@@ -97,19 +97,19 @@ It has a "shopping cart":
 - [JetBrains](https://www.youtube.com/@JetBrainsTV)
 - [VSCode](https://www.youtube.com/@code)
 
-### ZScaler Issues (only when needed)
+### Zscaler Issues (only when needed)
 
-You may encounter ZScaler issues (company proxy). If you see `SSL CERTIFICATE ERRORS`, `UNABLE TO GET LOCAL ISSUER CERTIFICATE`, or random connection failures, suspect ZScaler.
+You may encounter Zscaler issues (company proxy). If you see `SSL CERTIFICATE ERRORS`, `UNABLE TO GET LOCAL ISSUER CERTIFICATE`, or random connection failures, suspect Zscaler.
 
 First steps:
 
 - Download the certificate from the company.
 - Save it as `C:\zscaler.crt`.
 
-**Webstorm**
+**WebStorm**
 
 - `File > Settings`, search `Proxy`, enable `Auto-detect proxy settings`.
-- Search `Server Certificates`, click `+` in the Accepted Certificates table, add the ZScaler cert.
+- Search `Server Certificates`, click `+` in the Accepted Certificates table, add the Zscaler cert.
 
 **Git**
 

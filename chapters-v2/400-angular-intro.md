@@ -4,7 +4,7 @@
 
 This chapter gets Angular 22 onto your machine and your first project running. From here on, every chapter adds something to the Online Shop.
 
-A habit to start now: **format your file on every save**. Both [VSCode](https://code.visualstudio.com/docs/editor/codebasics#_formatting) and [Webstorm](https://www.jetbrains.com/help/webstorm/reformat-and-rearrange-code.html) can do this. It avoids merge conflicts that are nothing but whitespace.
+A habit to start now: **format your file on every save**. Both [VSCode](https://code.visualstudio.com/docs/editor/codebasics#_formatting) and [WebStorm](https://www.jetbrains.com/help/webstorm/reformat-and-rearrange-code.html) can do this. It avoids merge conflicts that are nothing but whitespace.
 
 ## Goal
 
@@ -19,7 +19,7 @@ By the end of this chapter you should be able to explain:
 
 ### Practice
 
-> Install the Angular CLI (uses NodeJS npm): `npm install -g @angular/cli`.
+> Install the Angular CLI (uses Node.js npm): `npm install -g @angular/cli`.
 >
 > Create a new project in the root of your git repository: `ng new online-shop --style=scss`.
 >

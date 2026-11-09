@@ -39,7 +39,7 @@ By the end of this chapter you should be able to explain:
 
 ### IDE Integration (Optional)
 
-- [Webstorm Git integration](https://www.youtube.com/watch?v=v0t_GHKyTiI) — buttons may have moved, the ideas haven't.
+- [WebStorm Git integration](https://www.youtube.com/watch?v=v0t_GHKyTiI) — buttons may have moved, the ideas haven't.
 - [VSCode Git integration](https://www.youtube.com/watch?v=i_23KUAEtUM).
 
 ## Testing
