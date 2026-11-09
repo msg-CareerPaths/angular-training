@@ -7,9 +7,9 @@
 3. Links/Mandatory Materials
     -> videos
     -> reading
-4. Optional Resources
+4. Testing (this should replace chapter optional 3 and add a new subseciton to each chapter)
+5. Optional Resources
     -> Cheat Sheet (optional - rxjs/signals)
-
 
 Decide if we want to go with a single version of angular without having to switch back and forth between old/new conventions of angular.
     -> either old angular and then at the end introduce new stuff.
