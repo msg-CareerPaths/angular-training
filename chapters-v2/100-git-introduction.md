@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Git is how you will manage your codebase on every project from here on. This chapter is a quick primer on the commands and workflows you will use daily. If you have already done it in another training, you can skip it.
+Git is how you will manage your codebase on every project from here on. 
+This chapter is a quick primer on the commands and workflows you will use daily. If you have already done it in another training, you can skip it.
 
 ## Goal
 

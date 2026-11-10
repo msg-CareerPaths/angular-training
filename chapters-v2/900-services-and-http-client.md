@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Services hold the logic that doesn't belong in a component — loading data, managing cross-component state, calling the backend. Angular's `HttpClient` is how you talk to HTTP APIs. In Angular 22 you lean on signals (`toSignal`, `httpResource`) or Observables (`HttpClient` methods return them), depending on the shape of the data.
+Services hold the logic that doesn't belong in a component - loading data, managing cross-component state, calling the backend. Angular's `HttpClient` is how you talk to HTTP APIs. In Angular 22 you lean on signals (`toSignal`, `httpResource`) or Observables (`HttpClient` methods return them), depending on the shape of the data.
 
 ## Goal
 
@@ -14,7 +14,7 @@ By the end of this chapter you should be able to explain:
 - How Angular's dependency injection resolves a service.
 - How `HttpClient` returns `Observable`s, and how to turn them into signals with `toSignal`.
 - How to configure the API base URL via `src/environments/`.
-- What an **injection context** is and why `inject()` works at the top of a class property or inside a constructor.
+- What an **injection context** is and why `inject()` works in a class field initializer or a constructor.
 
 ### Practice
 

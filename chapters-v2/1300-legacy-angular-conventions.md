@@ -2,7 +2,7 @@
 
 ## Introduction
 
-By now you've built the Online Shop entirely in the modern Angular 22 style: standalone components, signal inputs/outputs, native control flow, `inject()`, Signal Store. Great. But most real codebases you will join have years of history — you will open files that look nothing like what you've written here. This chapter is a guided tour of the legacy conventions so you can **read, debug, and touch** older code without surprise.
+By now you've built the Online Shop entirely in the modern Angular 22 style: standalone components, signal inputs/outputs, native control flow, `inject()`, Signal Store. Great. But most real codebases you will join have years of history - you will open files that look nothing like what you've written here. This chapter is a guided tour of the legacy conventions so you can **read, debug, and touch** older code without surprise.
 
 You are not expected to use these patterns in new code. You *are* expected to recognize them.
 
@@ -15,7 +15,7 @@ By the end of this chapter you should be able to explain:
 - The `@Input()` / `@Output()` **decorator** form of component I/O, and how it differs from `input()` / `output()` signals.
 - **Constructor dependency injection** (`constructor(private svc: Svc) {}`) vs `inject()`.
 - The old **structural directives**: `*ngIf`, `*ngFor`, `*ngSwitch`, and their `else` / `let` tricks.
-- Legacy pipes you still see everywhere: `| async`, `| json`, `| date`, `| uppercase`.
+- The old `*ngIf="data$ | async as data"` idiom, and how `@let data = data$ | async;` or `toSignal()` replace it. 
 - `NgModule` basics — `declarations`, `imports`, `providers`, `exports` — and how a feature module hangs together.
 - **Class-based** `HttpInterceptor` and **class-based** route guards (`CanActivate`), and why they were replaced by the functional forms.
 - The old change-detection story: `ChangeDetectionStrategy.OnPush` was opt-in; `ChangeDetectorRef.markForCheck()` was common.
@@ -27,7 +27,7 @@ This is a reading-and-recognizing chapter. Do each exercise in a **throwaway bra
 
 > **Exercise 1 — Decorator I/O.** Pick one leaf component and rewrite it using `@Input()` / `@Output() EventEmitter`. Note what you lose (type-inference-friendly `input.required()`, no required-input guarantee, `@Input() set x(v) { ... }` getter/setter dance for derived values).
 >
-> **Exercise 2 — Constructor injection.** In the same component (or a service), replace `inject(Svc)` with `constructor(private svc: Svc) {}`. Note the difference and the gotchas (injection context restrictions you *don't* have with constructor DI — but you lose the flexibility of injecting outside class-field context).
+> **Exercise 2 — Constructor injection.** In the same component (or a service), replace `inject(Svc)` with `constructor(private svc: Svc) {}`. Note the difference: the constructor is verbose and gets in the way of inheritance, while `inject()` works in field initializers and helper functions.
 >
 > **Exercise 3 — Structural directives.** Rewrite one template to use `*ngIf`, `*ngFor`, and `*ngSwitchCase` instead of `@if` / `@for` / `@switch`. Import `CommonModule` (or `NgIf`, `NgFor` individually) to make the directives available.
 >
@@ -51,7 +51,7 @@ This is a reading-and-recognizing chapter. Do each exercise in a **throwaway bra
 - [Constructor vs `inject()` — Angular DI](https://angular.dev/guide/di/dependency-injection) — read the "class providers" & "injection context" sections.
 - [Structural directives — the `*` syntax explained](https://angular.dev/guide/directives/structural-directives)
   - [`NgIf`](https://angular.dev/api/common/NgIf), [`NgFor`](https://angular.dev/api/common/NgFor), [`NgSwitch`](https://angular.dev/api/common/NgSwitch)
-- [Common pipes](https://angular.dev/api/common) — `AsyncPipe`, `DatePipe`, `JsonPipe`, `UpperCasePipe`, etc.
+- [`AsyncPipe`](https://angular.dev/api/common/AsyncPipe) — and the `as` alias pattern used with `*ngIf`.
 - [NgModules overview](https://angular.dev/guide/ngmodules/overview)
 - [Class-based `HttpInterceptor`](https://angular.dev/api/common/http/HttpInterceptor)
 - [Class-based `CanActivate` guard](https://angular.dev/api/router/CanActivate)

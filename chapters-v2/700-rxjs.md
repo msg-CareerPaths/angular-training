@@ -2,9 +2,9 @@
 
 ## Introduction
 
-RxJS is a library for working with **streams of values over time**. Before signals, it was the de-facto reactive primitive in Angular — every existing codebase you join will be full of it. Angular still uses it under the hood for `HttpClient`, forms' `valueChanges`, router params, and much more.
+RxJS is a library for working with **streams of values over time**. It was the main way to handle reactivity in Angular before signals, so you'll find it in almost every existing project. Angular also uses it internally for `HttpClient`, form `valueChanges`, and router params.
 
-You just learned signals in Chapter 6; this chapter is the twin story. You won't write giant RxJS pipelines in this training — signals handle most of the UI reactivity — but you must be able to read RxJS, subscribe safely, and bridge it to signals (and vice-versa).
+In this training, signals handle most of the UI, so you won't write much RxJS yourself. The goal here is to read it, subscribe without leaking memory, and move between RxJS and signals when you need to.
 
 ## Goal
 
@@ -27,7 +27,7 @@ By the end of this chapter you should be able to explain:
 
 > This chapter is exploration-only — nothing to merge into the Online Shop permanently. Work in a throwaway branch or a scratch component.
 >
-> **Exercise 1 — Observable vs signal.** In a scratch component (or `app.component.ts`), expose a `BehaviorSubject<number>` incremented by a button. Read it in the template two ways:
+> **Exercise 1 — Observable vs signal.** In a scratch component (or `app.ts`), expose a `BehaviorSubject<number>` incremented by a button. Read it in the template two ways:
 >
 > - With `| async`.
 > - With `toSignal(subject)` and render the signal in the template.
@@ -44,7 +44,6 @@ By the end of this chapter you should be able to explain:
 
 - **Never** leave a subscription without a cleanup path. Use `takeUntilDestroyed()` or `| async` wherever possible.
 - Prefer `toSignal()` to reading an Observable in the template with `| async` when the value drives component logic too.
-- Inject services with the [`inject`](https://angular.dev/api/core/inject) function.
 
 ## Mandatory Materials
 
@@ -91,4 +90,3 @@ By the end of this chapter you should be able to explain:
 
 - [RxJS Marble Diagrams](https://rxmarbles.com)
 - [Learn RxJS](https://www.learnrxjs.io)
-- [Angular `inject` function](https://youtu.be/_quyWq4NnRM) *(video)*
