@@ -44,14 +44,26 @@ By the end of this chapter you should be able to explain:
 
 ```text
 ├── src/app
-│   ├── guards
-│   │   ├── auth.guard.ts
-│   ├── interceptors
-│   │   ├── auth.interceptor.ts
-│   ├── services
-│   │   ├── auth.service.ts
-│   ├── types
-│   │   ├── users.types.ts          -- sits next to products.types.ts from Chapter 5
+│   ├── core                        -- app-wide singletons
+│   │   ├── guards
+│   │   │   ├── auth.guard.ts
+│   │   │   ├── auth.guard.spec.ts
+│   │   ├── interceptors
+│   │   │   ├── auth.interceptor.ts
+│   │   │   ├── auth.interceptor.spec.ts
+│   │   ├── services
+│   │       ├── auth.service.ts
+│   │       ├── auth.service.spec.ts
+│   ├── features
+│   │   ├── auth
+│   │       ├── login               -- login container + view
+│   │           ├── login.ts
+│   │           ├── login.scss
+│   │           ├── login.html
+│   │           ├── login.spec.ts
+│   ├── shared
+│       ├── types
+│           ├── users.types.ts      -- User/Role model, used across features
 │.......<the previous files>................................
 ```
 

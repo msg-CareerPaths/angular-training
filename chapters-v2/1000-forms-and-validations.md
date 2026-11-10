@@ -34,17 +34,18 @@ The logic lives in **container** components; the view lives in the **presentatio
 
 ```text
 ├── src/app
-│   ├── components
-│   │   ├── containers
-│   │   │   ├── products-form
-│   │   │   │   ├── products-form.ts
-│   │   │   │   ├── products-form.scss
-│   │   │   │   ├── products-form.html
-│   │   ├── presentational
-│   │       ├── products-form-view
-│   │       │   ├── products-form-view.ts
-│   │       │   ├── products-form-view.scss
-│   │       │   ├── products-form-view.html
+│   ├── features
+│       ├── products
+│           ├── products-form           -- container
+│           │   ├── products-form.ts
+│           │   ├── products-form.scss
+│           │   ├── products-form.html
+│           │   ├── products-form.spec.ts
+│           ├── products-form-view      -- presentational
+│               ├── products-form-view.ts
+│               ├── products-form-view.scss
+│               ├── products-form-view.html
+│               ├── products-form-view.spec.ts
 │.......<the previous files>................................
 ```
 
