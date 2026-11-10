@@ -29,13 +29,17 @@ The logic you write here belongs in **container** components, not presentational
 > - `getOne(id: string)` → `Observable<Product>`
 > - `delete(id: string)` → `Observable<void>`
 >
+> *(You'll add `create()` and `update()` in [Chapter 10](1000-forms-and-validations.md), when the forms need them.)*
+>
 > In the products-list container, read all products via `toSignal(service.getAll(), { initialValue: [] })` and pass the signal to the presentational list.
+>
+> Now that data comes from the backend, delete `src/app/mocks/products.mocks.ts` and the mock imports you added in [Chapter 5](500-components.md).
 >
 > In the detail container, read the product by id the same way.
 >
 > Add a "Delete" button on the detail page that calls `delete()` and navigates back to the list.
 >
-> Create a `ShoppingCartService` with a `checkout()` method that posts an order to the backend. Wire it to a "Checkout" button on the cart page.
+> Create a `ShoppingCartService` with a `checkout()` method that posts an order to the backend. Wire it to a "Checkout" button on the cart page. The cart's items stay in the client for now; you'll move that state into a store in [Chapter 12](1200-ngrx.md).
 
 #### Rules
 
@@ -53,10 +57,7 @@ The logic you write here belongs in **container** components, not presentational
 │   ├── app
 │       ├── services
 │       │   ├── products.service.ts
-│       ├── features
-│           ├── shopping-cart
-│               ├── services
-│                   ├── shopping-cart.service.ts
+│       │   ├── shopping-cart.service.ts
 │.......<the previous files>................................
 ```
 

@@ -75,7 +75,7 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 │   ├── types
 │   │   ├── products.types.ts       -- interface for Product
 │   ├── mocks
-│       ├── products.mocks.ts       -- mock data for Product (removed later)
+│       ├── products.mocks.ts       -- mock data for Product (deleted in Chapter 9, once HTTP replaces it)
 ```
 
 ## Mandatory Materials

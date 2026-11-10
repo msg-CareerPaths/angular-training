@@ -19,7 +19,7 @@ By the end of this chapter you should be able to explain:
 
 ### Practice
 
-> Create a login view: username input, password input, login button.
+> Create a login view: username input, password input, login button. Register its `/login` route in `app.routes.ts`.
 >
 > On successful login, store the JWT in `localStorage` and redirect to `/products`. On failure, show an error.
 >
@@ -31,7 +31,7 @@ By the end of this chapter you should be able to explain:
 > - Attaches `Authorization: Bearer <token>` if a token exists.
 > - On a 401 response, clears the token and redirects to `/login`.
 >
-> Register a **functional route guard** that blocks access to app routes when no token is present.
+> Register a **functional route guard** that blocks access to app routes when no token is present. Leave `/login` public so a logged-out user can still reach it.
 >
 > Use the backend's roles to enable/disable the edit, create, and delete buttons. Only customers can view the cart and add to it.
 
@@ -50,10 +50,8 @@ By the end of this chapter you should be able to explain:
 │   │   ├── auth.interceptor.ts
 │   ├── services
 │   │   ├── auth.service.ts
-│   ├── features
-│       ├── shared
-│           ├── types
-│               ├── users.types.ts
+│   ├── types
+│   │   ├── users.types.ts          -- sits next to products.types.ts from Chapter 5
 │.......<the previous files>................................
 ```
 
