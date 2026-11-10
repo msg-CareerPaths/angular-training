@@ -2,7 +2,17 @@
 
 ## Introduction
 
-Signals are Angular's native reactive primitive. They replace much of what you used to do with `@Input` getters, change-detection tricks, and hand-rolled Subjects. You've already been using `input()` and `output()` — those are signals. This chapter zooms out and makes them the center of the component model.
+Signals are Angular's native reactive primitive. They replace much of what you used to do with `@Input` getters, change-detection tricks, and hand-rolled Subjects.
+
+**You've already been writing signal-based code.** The `input()` and `output()` you used in Chapter 5 are signals. This chapter zooms out, explains *why* they behave the way they do, and makes signals the center of the component model from here on. If you still have any lingering `@Input()` / `@Output()` decorators in a component you built earlier, now is the time to convert them to `input()` / `output()`.
+
+A small bit of vocabulary first:
+
+- A signal is **readable** — anything can call it (`count()`) to get the current value. All signals are readable.
+- A signal is **writable** if you can change it (`count.set(1)`, `count.update(v => v + 1)`). `signal()` creates a writable signal.
+- A signal is **derived (read-only)** if its value comes from other signals. `computed()` creates a read-only signal.
+
+See the [Signals Cheat Sheet](#signals-cheat-sheet) at the end of this chapter for the APIs at a glance.
 
 ## Goal
 
@@ -10,13 +20,13 @@ Signals are Angular's native reactive primitive. They replace much of what you u
 
 By the end of this chapter you should be able to explain:
 
-- What a signal is (a value with a known reader) and why it changes rendering.
-- The three flavors: **writable** (`signal`), **computed** (`computed`), **linked** (`linkedSignal`).
-- Input signals (`input()`, `input.required()`), output signals (`output()`), and model signals (`model()`).
+- What a signal is.
+- The three flavors: **writable**, **computed**, **linked**.
+- Input signals, output signals, and model signals.
 - What an **effect** is, and why effects are a last resort.
 - `toSignal` / `toObservable` — the RxJS interop bridges.
-- Why Angular 22 defaults to **OnPush** change detection and what that implies.
-- What an **injection context** is (why `inject()` and `effect()` must be called inside one).
+
+  > **Note:** This point is hard to grasp without knowing RxJS, which is covered in the [next chapter](700-rxjs.md). Don't spend too much time on it here — a rough idea is enough (`toSignal`: Observable → Signal, `toObservable`: Signal → Observable). Move on to the RxJS chapter, where the interop will click.
 
 ### Practice
 
@@ -82,19 +92,48 @@ By the end of this chapter you should be able to explain:
 
 ### Signals Cheat Sheet
 
-| What                          | API                              |
-| ----------------------------- | -------------------------------- |
-| Create writable state         | `const count = signal(0)`        |
-| Read a signal                 | `count()`                        |
-| Write                         | `count.set(1)` / `count.update()` |
-| Derive                        | `const double = computed(() => count() * 2)` |
-| Required input                | `name = input.required<string>()` |
-| Optional input w/ default     | `size = input<Size>('md')`       |
-| Model (two-way) input         | `value = model<string>('')`      |
-| Output                        | `clicked = output<MouseEvent>()` |
-| From Observable               | `data = toSignal(http.get<T>(url))` |
-| To Observable                 | `toObservable(count)`            |
-| Side effect                   | `effect(() => console.log(count()))` *(avoid)* |
+**Writable (you can change the value):**
+
+| Need                            | API                                   | Notes                                  |
+| ------------------------------- | ------------------------------------- | -------------------------------------- |
+| Local component state           | `const count = signal(0)`             | Default for anything you'll mutate.    |
+| Model (two-way) input           | `value = model<string>('')`           | Parent and child both read + write.    |
+
+**Read-only (anything can read, nothing can write):**
+
+| Need                            | API                                                  | Notes                                             |
+| ------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
+| Derived value                   | `const double = computed(() => count() * 2)`         | Automatically updates when `count()` changes.            |
+| Required input from parent      | `name = input.required<string>()`                    | Compile-time guarantee the parent passes it.      |
+| Optional input w/ default       | `size = input<Size>('md')`                           | Returns `Signal<T>` with the fallback.            |
+| From an Observable              | `data = toSignal(http.get<T>(url), { initialValue })`| Cleans up subscription automatically.             |
+
+**Read / write actions:**
+
+| Action                          | API                                                 |
+| ------------------------------- | --------------------------------------------------- |
+| Read                            | `count()`                                           |
+| Set directly                    | `count.set(1)`                                      |
+| Update from current             | `count.update(v => v + 1)`                          |
+
+**Events out of the component:**
+
+| Need                            | API                                                 |
+| ------------------------------- | --------------------------------------------------- |
+| Output signal                   | `clicked = output<MouseEvent>()` → `clicked.emit(e)` |
+
+**Bridging RxJS (see [Chapter 7](700-rxjs.md)):**
+
+| Direction                       | API                                                 |
+| ------------------------------- | --------------------------------------------------- |
+| Observable → Signal             | `toSignal(obs$, { initialValue })`                  |
+| Signal → Observable             | `toObservable(sig)`                                 |
+
+**Last resort:**
+
+| Need                            | API                                                 |
+| ------------------------------- | --------------------------------------------------- |
+| Side effect on change           | `effect(() => console.log(count()))` *(avoid — see Rules)* |
 
 ### Further Reading
 

@@ -43,7 +43,7 @@ Every chapter follows the same shape:
 No particular order is required.
 
 - [Opt 1. Internationalization](chapters-v2/opt-100-internationalization.md)
-- [Opt 2. Normalized NgRx](chapters-v2/opt-200-normalized-ngrx.md)
+- [Opt 2. Classical NgRx & Normalized State](chapters-v2/opt-200-normalized-ngrx.md)
 - [Opt 3. E2E Testing](chapters-v2/opt-300-e2e-testing.md)
 - [Opt 4. Component Library](chapters-v2/opt-400-component-library-development.md) *(deprecated)*
 - [Opt 5. Nx Mono-repository](chapters-v2/opt-500-monorepository-nx.md) *(deprecated)*
@@ -56,7 +56,7 @@ No particular order is required.
 
 - **Angular 22 default throughout** — no mixing of decorator inputs/outputs with signal inputs/outputs chapter by chapter.
 - **RxJS is its own chapter**, placed right after Signals so students see them as a pair ([Chapter 7](chapters-v2/700-rxjs.md)). Routing can then prefer signal inputs and mention the Observable form as recognition-only.
-- **Chapter 12 (NgRx)** leads with **`@ngrx/signals` Signal Store**; classical NgRx is optional material at the end of that chapter and in [Opt 2](chapters-v2/opt-200-normalized-ngrx.md).
+- **Chapter 12 (NgRx)** leads with **`@ngrx/signals` Signal Store**; classical NgRx is optional material in [Opt 2](chapters-v2/opt-200-normalized-ngrx.md).
 - **New [Chapter 13 — Legacy Angular Conventions](chapters-v2/1300-legacy-angular-conventions.md)** — a guided tour of `@Input`/`@Output`, constructor DI, `*ngIf`/`*ngFor`, `NgModule`, class-based interceptors & guards. Throwaway-branch exercises only — nothing to merge.
 - **Standalone vs Modules absorbed** — v1 had a dedicated Modules & Standalone chapter that overlapped with the Legacy chapter. In v2, standalone is the default from Chapter 5 and the NgModule contrast is a single exercise in Chapter 13.
 - **Unit testing is no longer a standalone chapter.** Every chapter from 5 onward has a **Testing** subsection with what to test for that chapter's work. The former `opt-400` E2E chapter is now [Opt 3](chapters-v2/opt-300-e2e-testing.md).

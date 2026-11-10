@@ -11,9 +11,7 @@ Writing every button, table, and dialog from scratch gets old quickly. **Angular
 By the end of this chapter you should be able to explain:
 
 - What a component library is and why you'd use one.
-- The Material Design principles at a high level.
 - How Angular Material's components are imported (standalone — one import per component).
-- How theming works (predefined palettes, dark mode, custom tokens).
 
 ### Practice
 

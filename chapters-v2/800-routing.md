@@ -23,9 +23,14 @@ By the end of this chapter you should be able to explain:
 
 > Add a button next to each product in the product list that navigates to the product's detail page.
 >
-> From the detail page, add an "Add to Cart" button (hooks up properly in later chapters).
+> From the detail page, add an "Add to Cart" button (hooks up properly in [Chapter 12 — NgRx Signal Store](1200-ngrx.md), where real cart state is introduced; for now the button can log or no-op).
 >
-> Wire routing: register `app.routes.ts` in `app.config.ts`, add `<router-outlet>` to `app.component.html`.
+> Wire routing: register `app.routes.ts` in `app.config.ts`, add `<router-outlet>` to `app.component.html`. **Remove the component selectors you placed directly in `app.component.html` in [Chapter 5](500-components.md)** — the router-outlet now renders them based on URL. Keep anything that should be visible on every page (e.g. a nav bar) outside the outlet.
+>
+> Register at minimum these routes:
+> - `/products` → products list container
+> - `/products/:id` → products details container
+> - `/cart` → shopping-cart-details container (the component you built in Chapter 5 now needs a URL to live at)
 >
 > Redirect the default path `/` to `/products`.
 >

@@ -20,9 +20,11 @@ By the end of this chapter you should be able to explain:
 
 The logic lives in **container** components; the view lives in the **presentational** sibling.
 
+> **Extend `ProductsService` first.** In [Chapter 9](900-services-and-http-client.md) you added `getAll()`, `getOne()`, and `delete()`. Add the two methods this chapter's forms need: `create()` and `update()`.
+>
 > Add an "Edit" button on the product detail page. Clicking it opens a view using a reactive form to update the product. The view has:
 > - **Cancel** — discards all changes.
-> - **Save** — calls the backend to persist.
+> - **Save** — calls new services to persist, then navigates back.
 >
 > Validate: fields are non-empty, price and weight contain only numbers, price > 0, etc.
 >
@@ -72,7 +74,7 @@ The logic lives in **container** components; the view lives in the **presentatio
 ## Optional Resources
 
 - [Custom form controls](https://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html)
-- [`ControlValueAccessor`](https://angular.dev/api/forms/ControlValueAccessor)
+- [ControlValueAccessor](https://angular.dev/api/forms/ControlValueAccessor)
 
 ### Optional: Explore Signal Forms (Angular 22)
 
@@ -84,6 +86,7 @@ Angular 22 ships **Signal Forms**, a newer forms API built on signals. Once your
 - [Signal Forms — form models](https://angular.dev/guide/forms/signals/models)
 - [Signal Forms — validation](https://angular.dev/guide/forms/signals/validation)
 - [Signal Forms — comparison with other form systems](https://angular.dev/guide/forms/signals/comparison)
+- [Signal Forms playground](https://angular.dev/playground?templateId=4-signal-forms) — live runnable Signal Forms example on angular.dev.
 
 **Optional Exercise**
 

@@ -39,7 +39,7 @@ Every chapter follows the same shape:
 No particular order is required.
 
 - [Opt 1. Internationalization](opt-100-internationalization.md)
-- [Opt 2. Normalized NgRx](opt-200-normalized-ngrx.md)
+- [Opt 2. Classical NgRx & Normalized State](opt-200-normalized-ngrx.md)
 - [Opt 3. E2E Testing](opt-300-e2e-testing.md)
 - [Opt 4. Component Library](opt-400-component-library-development.md) *(deprecated)*
 - [Opt 5. Nx Mono-repository](opt-500-monorepository-nx.md) *(deprecated)*
