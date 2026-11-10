@@ -43,7 +43,7 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 
 #### Folder Structure
 
-We organize the app **by feature**: each feature folder owns its components (container + presentational), and later its types, service and store. Two more top-level folders appear in later chapters — `core/` for app-wide singletons (guards, interceptors, auth) and `shared/` for things used across features.
+We organize the app **by feature**. Inside each feature, `pages/` holds the smart, routed components (the containers) and `views/` holds the presentational, view-only components. A feature also owns its types, and later its service and store. Two more top-level folders appear in later chapters — `core/` for app-wide singletons (guards, interceptors, auth) and `shared/` for things used across features.
 
 `ng generate` scaffolds a `.spec.ts` test file next to every component and service — those are shown below and in later chapters.
 
@@ -51,39 +51,43 @@ We organize the app **by feature**: each feature folder owns its components (con
 ├── src/app
 │   ├── features
 │   │   ├── products
-│   │   │   ├── products-list          -- container: imports mock data, passes it to the view
-│   │   │   │   ├── products-list.ts
-│   │   │   │   ├── products-list.scss
-│   │   │   │   ├── products-list.html
-│   │   │   │   ├── products-list.spec.ts
-│   │   │   ├── products-list-view      -- presentational (view-only)
-│   │   │   │   ├── products-list-view.ts
-│   │   │   │   ├── products-list-view.scss
-│   │   │   │   ├── products-list-view.html
-│   │   │   │   ├── products-list-view.spec.ts
-│   │   │   ├── products-details        -- container
-│   │   │   │   ├── products-details.ts
-│   │   │   │   ├── products-details.scss
-│   │   │   │   ├── products-details.html
-│   │   │   │   ├── products-details.spec.ts
-│   │   │   ├── products-details-view   -- presentational
-│   │   │   │   ├── products-details-view.ts
-│   │   │   │   ├── products-details-view.scss
-│   │   │   │   ├── products-details-view.html
-│   │   │   │   ├── products-details-view.spec.ts
+│   │   │   ├── pages
+│   │   │   │   ├── products-list
+│   │   │   │   │   ├── products-list.ts
+│   │   │   │   │   ├── products-list.scss
+│   │   │   │   │   ├── products-list.html
+│   │   │   │   │   ├── products-list.spec.ts
+│   │   │   │   ├── products-details
+│   │   │   │       ├── products-details.ts
+│   │   │   │       ├── products-details.scss
+│   │   │   │       ├── products-details.html
+│   │   │   │       ├── products-details.spec.ts
+│   │   │   ├── views
+│   │   │   │   ├── products-list-view
+│   │   │   │   │   ├── products-list-view.ts
+│   │   │   │   │   ├── products-list-view.scss
+│   │   │   │   │   ├── products-list-view.html
+│   │   │   │   │   ├── products-list-view.spec.ts
+│   │   │   │   ├── products-details-view
+│   │   │   │       ├── products-details-view.ts
+│   │   │   │       ├── products-details-view.scss
+│   │   │   │       ├── products-details-view.html
+│   │   │   │       ├── products-details-view.spec.ts
 │   │   │   ├── products.types.ts       -- interface for Product
 │   │   │   ├── products.mocks.ts       -- mock data (deleted in Chapter 9, once HTTP replaces it)
 │   │   ├── shopping-cart
-│   │       ├── shopping-cart-details       -- container
-│   │       │   ├── shopping-cart-details.ts
-│   │       │   ├── shopping-cart-details.scss
-│   │       │   ├── shopping-cart-details.html
-│   │       │   ├── shopping-cart-details.spec.ts
-│   │       ├── shopping-cart-details-view  -- presentational
-│   │           ├── shopping-cart-details-view.ts
-│   │           ├── shopping-cart-details-view.scss
-│   │           ├── shopping-cart-details-view.html
-│   │           ├── shopping-cart-details-view.spec.ts
+│   │       ├── pages
+│   │       │   ├── shopping-cart-details
+│   │       │       ├── shopping-cart-details.ts
+│   │       │       ├── shopping-cart-details.scss
+│   │       │       ├── shopping-cart-details.html
+│   │       │       ├── shopping-cart-details.spec.ts
+│   │       ├── views
+│   │           ├── shopping-cart-details-view
+│   │               ├── shopping-cart-details-view.ts
+│   │               ├── shopping-cart-details-view.scss
+│   │               ├── shopping-cart-details-view.html
+│   │               ├── shopping-cart-details-view.spec.ts
 ```
 
 ## Mandatory Materials

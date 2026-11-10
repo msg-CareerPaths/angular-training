@@ -56,11 +56,12 @@ By the end of this chapter you should be able to explain:
 │   │       ├── auth.service.spec.ts
 │   ├── features
 │   │   ├── auth
-│   │       ├── login               -- login container + view
-│   │           ├── login.ts
-│   │           ├── login.scss
-│   │           ├── login.html
-│   │           ├── login.spec.ts
+│   │       ├── pages
+│   │           ├── login
+│   │               ├── login.ts
+│   │               ├── login.scss
+│   │               ├── login.html
+│   │               ├── login.spec.ts
 │   ├── shared
 │       ├── types
 │           ├── users.types.ts      -- User/Role model, used across features
