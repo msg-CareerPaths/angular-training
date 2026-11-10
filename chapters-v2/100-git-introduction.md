@@ -55,5 +55,5 @@ By the end of this chapter you should be able to explain:
 
 ### Further Reading
 
-- [Oh Shit, Git!?!](https://ohshitgit.com) — recipes for getting out of the holes you will dig.
+- [Dangit, Git!?!](https://dangitgit.com) — recipes for getting out of the holes you will dig.
 - [Conventional Commits](https://www.conventionalcommits.org) — a convention for commit message prefixes.
