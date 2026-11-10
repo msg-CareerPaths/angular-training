@@ -10,6 +10,7 @@ The mock backend uses JWT. This chapter adds a login view, stores the token, att
 
 By the end of this chapter you should be able to explain:
 
+- The difference between authentication (who you are) and authorization (what you may do).
 - The difference between session and token authentication.
 - How a JWT travels from login → localStorage → request header → backend.
 - What a **functional interceptor** is (`HttpInterceptorFn`) and how it differs from the old class-based one.

@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Angular compiles to HTML, CSS, and JavaScript — and TypeScript is the dialect of JavaScript you will actually write. A fast tour of each is enough; you'll pick up depth as you build.
+Angular compiles to HTML, CSS, and JavaScript;
+TypeScript is the dialect of JavaScript you will actually write. A fast tour of each is enough, and you'll pick up depth as you build.
 
 ## Goal
 
@@ -46,7 +47,7 @@ By the end of this chapter you should be able to explain:
 
 - [TypeScript Styleguide](https://google.github.io/styleguide/tsguide.html)
 - [Airbnb JavaScript Styleguide](https://github.com/airbnb/javascript)
-- [Angular Coding Style Guide](https://angular.dev/style-guide) — note the newer guidance drops the `.component`/`.service` suffixes; follow what your mentor prefers.
+- [Angular Coding Style Guide](https://angular.dev/style-guide) - note the newer guidance drops the `.component`/`.service` suffixes; follow what your mentor prefers.
 
 ## Testing
 

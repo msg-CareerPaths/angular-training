@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Components are the unit of UI in Angular. Starting with Angular 22, the modern way is: **standalone** components, **signal** inputs/outputs, **native control flow** (`@if`, `@for`, `@switch`), and `inject()` for dependencies. That is the only style used in this chapter — the legacy decorator style (`@Input()`, `@Output()`, `*ngIf`, `*ngFor`) and `NgModule` are covered in [Chapter 13](1300-legacy-angular-conventions.md).
+Components are the unit of UI in Angular. Starting with Angular 22, the modern way is: **standalone** components, **signal** inputs/outputs, **native control flow** (`@if`, `@for`, `@switch`), and `inject()` for dependencies. That is the only style used in this chapter.
+The legacy decorator style (`@Input()`, `@Output()`, `*ngIf`, `*ngFor`) and `NgModule` are covered in [Chapter 13](1300-legacy-angular-conventions.md).
 
 ## Goal
 
@@ -32,11 +33,11 @@ Use mock data defined locally in each component's TypeScript file. Real data wil
 >
 > Add CSS to each component so it roughly matches the mockups.
 >
-> To test them, place their selectors in `app.component.html` and import the containers into `app.component.ts`'s `imports` array.
+> To test them, place their selectors in `app.html` and import the containers into `app.ts`'s `imports` array.
 
 #### Rules
 
-- Every component in this chapter should be **standalone** (the default in Angular 22) and use **signal inputs/outputs**.
+- Every component is **standalone** (the default in Angular 22) and uses **signal inputs/outputs**.
 - Use native control flow (`@if`, `@for`, `@switch`) — avoid the legacy structural directives.
 - Note that Angular 22's CLI scaffolds standalone components by default: `app.config.ts` + `bootstrapApplication()` replace the old `app.module.ts`. For the legacy `NgModule` path, see [Chapter 13](1300-legacy-angular-conventions.md).
 
