@@ -1,55 +1,85 @@
-# 8. Routing [3h]
+# 8. Routing [2h – 3h]
 
-**Goal:** understand the basics of Angular Routing and add routing to your project
+## Introduction
 
-## Important Note
+Routing turns URL paths into views. In this chapter you add navigation to the Online Shop: a product list at one URL, a product detail at another.
 
-### Observables and Subjects
-From this point on you will be likely working with something called `Observables` which are given by library called [RxJs](https://rxjs.dev)
-- These are a continuous stream of data, which you will subscribe to get data. 
-- Keep in mind that how the order events happen, the logic is not executed line by line since its asyncronous.
-- You will need to unsubscribe them to avoid memory leaks. **KEEP IN MIND**
-  - [Unsubscribe from RxJs Observables](https://www.thisdot.co/blog/best-practices-for-managing-rxjs-subscriptions)
-  - [Unsubscribing with takeUntilDestroyed](https://angular.dev/ecosystem/rxjs-interop/take-until-destroyed) (available since v19)
-  - [Unsubscribing with AsyncPipe](https://angular.dev/api/common/AsyncPipe) 
-- [Observables vs Promises](https://www.syncfusion.com/blogs/post/angular-promises-versus-observables.aspx)
-- [Similar to signals we have Subjects](https://www.learnrxjs.io/learn-rxjs/subjects)
-  - Note that a signal is most similar to a **BehaviorSubject** 
-- Prefer injecting in an Angular component using the [inject method](https://angular.dev/api/core/inject)
+You already know from [Chapter 7](700-rxjs.md) that `ActivatedRoute` exposes params as Observables (`paramMap`, `queryParamMap`). You could subscribe to those — and plenty of older codebases do. **In this training we prefer signal inputs via `withComponentInputBinding()`** for route params: no subscription to manage, no `takeUntilDestroyed`, the value just arrives as a signal. We'll mention the Observable form for recognition only.
+
+## Goal
+
+### Theory
+
+By the end of this chapter you should be able to explain:
+
+- What a route is and how `path`, `component`, `loadComponent`, and `children` compose.
+- What `<router-outlet>` does.
+- How to navigate declaratively (`routerLink`) and programmatically (`Router.navigate`).
+- How to read a route parameter via **signal inputs with `withComponentInputBinding()`** (preferred in Angular 22).
+- How to read a route parameter via `ActivatedRoute.snapshot` (one-shot read).
+- Lazy loading routes via `loadComponent` / `loadChildren`.
+
+### Practice
+
+> Add a button next to each product in the product list that navigates to the product's detail page.
+>
+> From the detail page, add an "Add to Cart" button (hooks up properly in [Chapter 12 — NgRx Signal Store](1200-ngrx.md), where real cart state is introduced; for now the button can log or no-op).
+>
+> Wire routing: register `app.routes.ts` in `app.config.ts`, add `<router-outlet>` to `app.component.html`. **Remove the component selectors you placed directly in `app.component.html` in [Chapter 5](500-components.md)** — the router-outlet now renders them based on URL. Keep anything that should be visible on every page (e.g. a nav bar) outside the outlet.
+>
+> Register at minimum these routes:
+> - `/products` → products list container
+> - `/products/:id` → products details container
+> - `/cart` → shopping-cart-details container (the component you built in Chapter 5 now needs a URL to live at)
+>
+> Redirect the default path `/` to `/products`.
+>
+> Pass the product's ID as a route param. **Read it as a signal input** on the detail component via `withComponentInputBinding()`. Example:
+>
+> ```ts
+> // app.config.ts
+> provideRouter(routes, withComponentInputBinding())
+>
+> // products-details.ts
+> id = input.required<string>();        // comes straight from the :id route param
+> ```
+>
+> If a given use case only needs a one-shot read, use `ActivatedRoute.snapshot.paramMap.get('id')` instead.
+
+#### Folder Structure
+
+```text
+├── src/app
+│   ├── app.routes.ts
+│   ├── app.config.ts            -- provideRouter(routes, withComponentInputBinding())
+│   ....<the previous files>................................
+```
 
 ## Mandatory Materials
 
 **Videos**
 
-1. [Angular Router—The Basics](https://www.youtube.com/watch?v=Np3ULAMqwNo)
+1. [Angular Router — The Basics](https://www.youtube.com/watch?v=Np3ULAMqwNo)
 
 **Reading**
 
 - [Angular Routing](https://angular.dev/guide/routing)
-- [Angular Common Router Tasks](https://angular.dev/guide/routing/common-router-tasks)
-- [Tour of Heroes: Routing](https://angular.dev/tutorials/learn-angular/12-enable-routing)
-- [Routing with Observables: Accessing query parameters and fragments](https://angular.dev/guide/routing/read-route-state#reading-parameters-on-a-route)
+- [Common router tasks](https://angular.dev/guide/routing/common-router-tasks)
+- [`withComponentInputBinding` — route params as signal inputs](https://angular.dev/api/router/withComponentInputBinding)
+- [Reading route state](https://angular.dev/guide/routing/read-route-state) — the **snapshot** section is what you'll use here; the Observable-based `paramMap` section is the RxJS-flavored alternative from [Chapter 7](700-rxjs.md).
+- [Lazy loading](https://angular.dev/guide/routing/common-router-tasks#lazy-loading)
 
-## Online Shop:
+## Testing
 
-> Add a button next to each product from the product list. You can use it to navigate to a specific product's detail page.
+> Add a routing test for the detail component:
 >
-> From the detail page of the product, the user may add it to his shopping cart (by pressing a button).
+> - Use `RouterTestingHarness` (or a stub `ActivatedRoute`) to render the detail component with `id` set to a known product.
+> - Assert the DOM shows that product's title.
 >
-> Add Routing to your project and implement a navigation between the list of all products and the product detail page. Use [`<router-outlet>`](https://angular.io/guide/router#router-outlet) as a placeholder for the currently displayed component in your app.
->
-> Add a navigation which redirects users from the default path ('/') to the '/products' page and displays by default the list of all products.
->
-> Enhance your app with routing parameters, such that you can navigate to a specific product's detail page. Hint: Use [`snapshot`](https://angular.io/guide/router#snapshot-the-no-observable-alternative) to capture the product's ID as a navigation parameter and display it in the details page.
+> Reference: [Angular testing — routing](https://angular.dev/guide/testing/components-scenarios#routing-component).
 
-### Folder Structure
+## Optional Resources
 
-```text
-├── src/app
-│   ├── app.routes.ts
-│   ....<the previous files>................................
-```
-
-### Futher Resources
-
-- [Angular Inject Function](https://youtu.be/_quyWq4NnRM)
+- [`Router.navigate` deep dive](https://angular.dev/api/router/Router#navigate)
+- [Route data (static)](https://angular.dev/api/router/Route#data)
+- [Resolvers](https://angular.dev/api/router/Resolve) — prefer them cautiously; signal-based data loading is usually simpler.
