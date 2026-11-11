@@ -19,7 +19,7 @@ By the end of this chapter you should be able to explain:
   - the `| async` pipe in templates,
   - manual `Subscription.unsubscribe()` in `ngOnDestroy`.
 - What a **Subject** is, and how **BehaviorSubject** relates to a signal.
-- Common operators you will actually use: `map`, `filter`, `switchMap`, `tap`, `catchError`, `combineLatest`, `distinctUntilChanged`.
+- Common operators you will actually use: `map`, `filter`, `switchMap`, `tap`, `catchError`.
 - Converting between RxJS and signals: `toSignal()` and `toObservable()`.
 - Where you'll meet RxJS in Angular even if you write signal-first code: `HttpClient` return values (Chapter 9), form `valueChanges` (Chapter 10), router params (Chapter 8).
 

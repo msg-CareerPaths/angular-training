@@ -30,7 +30,7 @@ By the end of this chapter you should be able to explain:
 
 ### Practice
 
-> Convert all your components to use signals wherever possible. From here on, this is the default.
+> Convert, if needed, all your components to use signals wherever possible. From here on, this is the default.
 >
 > - Component state → `signal()`.
 > - Derived state → `computed()`.
@@ -86,7 +86,8 @@ By the end of this chapter you should be able to explain:
 > Add a test that exercises a `computed()` signal:
 >
 > - Set up a component with a writable signal and a derived `computed()`.
-> - In the test, update the writable signal and assert the computed value and the rendered DOM both reflect the change after `fixture.detectChanges()`.
+> - Update the writable signal with `.set()`/`.update()`, then assert the computed value directly — a computed recomputes on read, so this needs no change detection.
+> - Assert the rendered DOM reflects the change after flushing change detection: `await fixture.whenStable()` (the zoneless-friendly call in Angular 22)
 
 ## Optional Resources
 

@@ -10,7 +10,7 @@ Services hold the logic that doesn't belong in a component - loading data, manag
 
 By the end of this chapter you should be able to explain:
 
-- What a service is and why `providedIn: 'root'` is the default.
+- What a service is, and how `@Service()` registers it at the root injector by default.
 - How Angular's dependency injection resolves a service.
 - How `HttpClient` returns `Observable`s, and how to turn them into signals with `toSignal`.
 - How to configure the API base URL via `src/environments/`.
@@ -24,7 +24,7 @@ The logic you write here belongs in **container** components, not presentational
 >
 > Put an `apiUrl` property in `src/environments/environment.ts` pointing at the mock backend.
 >
-> Create a `ProductsService` (`providedIn: 'root'`) that uses `inject(HttpClient)` and exposes:
+> Create a `ProductsService`(generated with Angular CLI) that uses `inject(HttpClient)` and exposes:
 > - `getAll()` → `Observable<Product[]>`
 > - `getOne(id: string)` → `Observable<Product>`
 > - `delete(id: string)` → `Observable<void>`
@@ -39,11 +39,11 @@ The logic you write here belongs in **container** components, not presentational
 >
 > Add a "Delete" button on the detail page that calls `delete()` and navigates back to the list.
 >
-> Create a `ShoppingCartService` with a `checkout()` method that posts an order to the backend. Wire it to a "Checkout" button on the cart page. The cart's items stay in the client for now; you'll move that state into a store in [Chapter 12](1200-ngrx.md).
+> Create a `ShoppingCartService` with a `checkout()` method that creates an order to the backend. Wire it to a "Checkout" button on the cart page. The cart's items stay in the client for now; you'll move that state into a store in [Chapter 12](1200-ngrx.md).
 
 #### Rules
 
-- Services use `@Injectable({ providedIn: 'root' })`.
+- Services use **`@Service()`**.
 - Use `inject()` for dependencies — not constructor parameters.
 - Avoid subscribing manually in components. Prefer `toSignal()` or the `| async` pipe.
 
@@ -86,7 +86,7 @@ The logic you write here belongs in **container** components, not presentational
 
 > Add a test for `ProductsService`:
 >
-> - Use `HttpTestingController` to flush a canned response for `getAll()` and assert the mapped result.
+> - Use `HttpTestingController` to return a fake response for `getAll()`, then check the service returns the expected products.
 > - Assert the correct URL and verb for `delete(id)`.
 >
 > Add a test for a container using the service:

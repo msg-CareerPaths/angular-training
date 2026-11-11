@@ -3,6 +3,7 @@
 ## Introduction
 
 Components are the unit of UI in Angular. Starting with Angular 22, the modern way is: **standalone** components, **signal** inputs/outputs, **native control flow** (`@if`, `@for`, `@switch`), and `inject()` for dependencies. That is the only style used in this chapter.
+
 The legacy decorator style (`@Input()`, `@Output()`, `*ngIf`, `*ngFor`) and `NgModule` are covered in [Chapter 13](1300-legacy-angular-conventions.md).
 
 ## Goal

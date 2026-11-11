@@ -52,6 +52,7 @@ By the end of this chapter you should be able to explain:
 - [Angular First App](https://angular.dev/tutorials/first-app) — **stop at tutorial 02 (Hello World)**. We'll cover components, control flow, services, and forms in dedicated chapters rather than following the full "first app" walkthrough.
 - [Angular Style Guide](https://angular.dev/style-guide)
 - [Angular Architecture Overview](https://angular.dev/overview)
+- [Angular Testing Overview](https://angular.dev/guide/testing)
 
 ## Testing
 

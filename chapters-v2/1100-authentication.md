@@ -13,7 +13,7 @@ By the end of this chapter you should be able to explain:
 - The difference between authentication (who you are) and authorization (what you may do).
 - The difference between session and token authentication.
 - How a JWT travels from login → localStorage → request header → backend.
-- What a **functional interceptor** is (`HttpInterceptorFn`) and how it differs from the old class-based one.
+- What a **functional interceptor** is (`HttpInterceptorFn`).
 - What a **functional route guard** is (`CanActivateFn`) and when it runs.
 - Why storing tokens in `localStorage` is pragmatic here but not ideal for production.
 
@@ -98,6 +98,11 @@ By the end of this chapter you should be able to explain:
 > Add a test for the functional guard:
 >
 > - Call it with a stub `Router`; assert it returns `true` when a token exists and a redirect `UrlTree` when it doesn't.
+>
+> Add a test for role-based UI:
+>
+> - Render the component that shows the cart with a logged-in **customer**; assert the shopping cart is visible.
+> - Render it logged out (or as a non-customer role); assert the cart is hidden.
 
 ## Optional Resources
 

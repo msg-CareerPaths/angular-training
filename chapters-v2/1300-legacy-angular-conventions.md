@@ -14,6 +14,7 @@ By the end of this chapter you should be able to explain:
 
 - The `@Input()` / `@Output()` **decorator** form of component I/O, and how it differs from `input()` / `output()` signals.
 - **Constructor dependency injection** (`constructor(private svc: Svc) {}`) vs `inject()`.
+- The pre-22.1 service decorator — `@Injectable({ providedIn: 'root' })` — and how `@Service()` is the shorthand that replaces it for root singletons. `@Injectable` is not gone: you'll still see it in older code.
 - The old **structural directives**: `*ngIf`, `*ngFor`, `*ngSwitch`, and their `else` / `let` tricks.
 - The old `*ngIf="data$ | async as data"` idiom, and how `@let data = data$ | async;` or `toSignal()` replace it. 
 - `NgModule` basics — `declarations`, `imports`, `providers`, `exports` — and how a feature module hangs together.
@@ -27,11 +28,11 @@ This is a reading-and-recognizing chapter. Do each exercise in a **throwaway bra
 
 > **Exercise 1 — Decorator I/O.** Pick one leaf component and rewrite it using `@Input()` / `@Output() EventEmitter`. Note what you lose (type-inference-friendly `input.required()`, no required-input guarantee, `@Input() set x(v) { ... }` getter/setter dance for derived values).
 >
-> **Exercise 2 — Constructor injection.** In the same component (or a service), replace `inject(Svc)` with `constructor(private svc: Svc) {}`. Note the difference: the constructor is verbose and gets in the way of inheritance, while `inject()` works in field initializers and helper functions.
+> **Exercise 2 — Constructor injection and `@Injectable`.** In the same component (or a service), replace `inject(Svc)` with `constructor(private svc: Svc) {}`. Note the difference: the constructor is verbose and gets in the way of inheritance, while `inject()` works in field initializers and helper functions. While you're there, swap the service's `@Service()` for the older `@Injectable({ providedIn: 'root' })` — both produce the same root singleton; `@Service()` is just the shorthand.
 >
 > **Exercise 3 — Structural directives.** Rewrite one template to use `*ngIf`, `*ngFor`, and `*ngSwitchCase` instead of `@if` / `@for` / `@switch`. Import `CommonModule` (or `NgIf`, `NgFor` individually) to make the directives available.
 >
-> **Exercise 4 — Legacy module.** Convert the shopping-cart feature back to an `NgModule` with `declarations`, `imports`, `exports` — mark its components `standalone: false`. See how many lines you added.
+> **Exercise 4 — Legacy module.** Convert the shopping-cart feature to an `NgModule` with `declarations`, `imports`, `exports` — mark its components `standalone: false`. See how many lines you added.
 >
 > **Exercise 5 — Class-based interceptor & guard.** Rewrite the auth interceptor as a class implementing `HttpInterceptor` and register it with `HTTP_INTERCEPTORS`. Rewrite the auth guard as a class implementing `CanActivate` and register it in `providers`.
 >
@@ -75,6 +76,7 @@ This is a reading-and-recognizing chapter. Do each exercise in a **throwaway bra
 | `name = input.required<string>()`| `@Input({ required: true }) name!: string`          |
 | `clicked = output<Event>()`      | `@Output() clicked = new EventEmitter<Event>()`     |
 | `svc = inject(Svc)`              | `constructor(private svc: Svc) {}`                  |
+| `@Service()`                     | `@Injectable({ providedIn: 'root' })`               |
 | `@if (open) { ... }`             | `<div *ngIf="open"> ... </div>`                     |
 | `@for (p of items; track p.id)`  | `<div *ngFor="let p of items; trackBy: trackById">` |
 | `@switch (x) { @case (1) {} }`   | `<div [ngSwitch]="x"><div *ngSwitchCase="1">`       |

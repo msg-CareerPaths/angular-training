@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This chapter uses **Reactive Forms** for the Online Shop. Reactive Forms are what nearly every existing Angular codebase uses and what a mentor reviewing your code will expect. Angular 22 also ships **Signal Forms** — you'll explore them at the end of the chapter as an optional dive.
+This chapter uses **Reactive Forms** for the Online Shop. Reactive Forms are what nearly every existing Angular codebase uses and what a mentor reviewing your code will expect.
+
+Angular 22 also ships **Signal Forms** — you'll explore them at the end of the chapter as an optional dive.
 
 ## Goal
 
@@ -20,7 +22,7 @@ By the end of this chapter you should be able to explain:
 
 The logic lives in **container** components; the view lives in the **presentational** sibling.
 
-> **Extend `ProductsService` first.** In [Chapter 9](900-services-and-http-client.md) you added `getAll()`, `getOne()`, and `delete()`. Add the two methods this chapter's forms need: `create()` and `update()`.
+> **Add new methods to `ProductsService` first.** In [Chapter 9](900-services-and-http-client.md) you added `getAll()`, `getOne()`, and `delete()`. Add the two methods this chapter's forms need: `create()` and `update()`.
 >
 > Add an "Edit" button on the product detail page. Clicking it opens a view using a reactive form to update the product. The view has:
 > - **Cancel** — discards all changes.
