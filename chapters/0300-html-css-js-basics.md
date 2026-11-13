@@ -1,7 +1,25 @@
 # 3. HTML, CSS/SCSS and JS/TS Basics [4h]
 
-**Goal:** Get a brief introduction into HTML, CSS and JS concepts.
+## Introduction
 
+Angular compiles to HTML, CSS, and JavaScript;
+TypeScript is the dialect of JavaScript you will actually write. A fast tour of each is enough, and you'll pick up depth as you build.
+
+## Goal
+
+### Theory
+
+By the end of this chapter you should be able to explain:
+
+- What HTML elements and attributes are.
+- How CSS selectors cascade and how SCSS extends CSS (nesting, variables, mixins).
+- Core JavaScript features: `let`/`const`, functions, arrow functions, modules, `async`/`await`.
+- What TypeScript adds on top of JavaScript (types, interfaces, generics).
+- What `npm` is and what `package.json` describes.
+
+### Practice
+
+> Nothing in the Online Shop yet.
 
 ## Mandatory Materials
 
@@ -10,7 +28,7 @@
 1. [HTML in 100 Seconds](https://www.youtube.com/watch?v=ok-plXXHlWw)
 2. [CSS in 100 Seconds](https://www.youtube.com/watch?v=OEV8gMkCHXQ)
 3. [JavaScript in 100 Seconds](https://www.youtube.com/watch?v=DHjqpvDnNGE)
-   - [Async/Await](https://youtu.be/vn3tm0quoqE)
+   - [Async / Await](https://youtu.be/vn3tm0quoqE)
 4. [TypeScript in 100 Seconds](https://www.youtube.com/watch?v=zQnBQ4tB3ZA)
 5. [SASS in 100 Seconds](https://www.youtube.com/watch?v=akDIJa0AP5c)
 6. [NPM](https://youtu.be/P3aKRdUyr0s)
@@ -25,16 +43,17 @@
 - [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [NPM Introduction](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 
-*Style Guide Reference*
+**Style Guides**
+
 - [TypeScript Styleguide](https://google.github.io/styleguide/tsguide.html)
-- [Airbnb JavaScrpt Styleguide](https://github.com/airbnb/javascript)
-- [Angular Coding Style Guide](https://angular.dev/style-guide) (note discuss with the mentors regarding prefixes in the older style of `.component`, `.service`, the new version suggest going ahead without it)
+- [Airbnb JavaScript Styleguide](https://github.com/airbnb/javascript)
+- [Angular Coding Style Guide](https://angular.dev/style-guide) - note the newer guidance drops the `.component`/`.service` suffixes; follow what your mentor prefers.
 
-## Online Shop
+## Testing
 
-> nothing to do.
+> Nothing to test here.
 
-## Further Resources (Optional):
+## Optional Resources
 
 - [Quick Overview over JavaScript Syntax](https://learnxinyminutes.com/docs/javascript/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
