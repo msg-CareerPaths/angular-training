@@ -21,7 +21,7 @@ By the end of this chapter you should be able to explain:
 > Migrate the Online Shop into an Nx workspace:
 > - [Migrate your Angular app to Nx](https://nx.dev/migration/migration-angular).
 > - [Create an internal library for reusable components](https://nx.dev/node-tutorial/04-create-libs).
-> - Move the components from [Opt 4](opt-400-component-library-development.md) into it and consume them from the app.
+> - Move the components from [Opt 4](opt-0400-component-library-development.md) into it and consume them from the app.
 > - Keep this library private (don't publish unless you want to).
 
 ## Mandatory Materials

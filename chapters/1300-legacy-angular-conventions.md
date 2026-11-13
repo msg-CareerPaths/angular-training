@@ -20,7 +20,7 @@ By the end of this chapter you should be able to explain:
 - `NgModule` basics — `declarations`, `imports`, `providers`, `exports` — and how a feature module hangs together.
 - **Class-based** `HttpInterceptor` and **class-based** route guards (`CanActivate`), and why they were replaced by the functional forms.
 - The old change-detection story: `ChangeDetectionStrategy.OnPush` was opt-in; `ChangeDetectorRef.markForCheck()` was common.
-- Classical NgRx briefly (actions / reducers / effects / selectors) — see [Opt 2 — Classical NgRx & Normalized State](opt-200-normalized-ngrx.md).
+- Classical NgRx briefly (actions / reducers / effects / selectors) — see [Opt 2 — Classical NgRx & Normalized State](opt-0200-normalized-ngrx.md).
 
 ### Practice
 

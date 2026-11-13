@@ -33,7 +33,7 @@ The logic you write here belongs in **container** components, not presentational
 >
 > In the products-list container, read all products via `toSignal(service.getAll(), { initialValue: [] })` and pass the signal to the presentational list.
 >
-> Now that data comes from the backend, delete `src/app/features/products/products.mocks.ts` and the mock imports you added in [Chapter 5](500-components.md).
+> Now that data comes from the backend, delete `src/app/features/products/products.mocks.ts` and the mock imports you added in [Chapter 5](0500-components.md).
 >
 > In the detail container, read the product by id the same way.
 >

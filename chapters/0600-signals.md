@@ -26,7 +26,7 @@ By the end of this chapter you should be able to explain:
 - What an **effect** is, and why effects are a last resort.
 - `toSignal` / `toObservable` — the RxJS interop bridges.
 
-  > **Note:** This point is hard to grasp without knowing RxJS, which is covered in the [next chapter](700-rxjs.md). Don't spend too much time on it here — a rough idea is enough (`toSignal`: Observable → Signal, `toObservable`: Signal → Observable). Move on to the RxJS chapter, where the interop will click.
+  > **Note:** This point is hard to grasp without knowing RxJS, which is covered in the [next chapter](0700-rxjs.md). Don't spend too much time on it here — a rough idea is enough (`toSignal`: Observable → Signal, `toObservable`: Signal → Observable). Move on to the RxJS chapter, where the interop will click.
 
 ### Practice
 
@@ -123,7 +123,7 @@ By the end of this chapter you should be able to explain:
 | ------------------------------- | --------------------------------------------------- |
 | Output signal                   | `clicked = output<MouseEvent>()` → `clicked.emit(e)` |
 
-**Bridging RxJS (see [Chapter 7](700-rxjs.md)):**
+**Bridging RxJS (see [Chapter 7](0700-rxjs.md)):**
 
 | Direction                       | API                                                 |
 | ------------------------------- | --------------------------------------------------- |
